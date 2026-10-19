@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="auto" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Dark Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#0B1329" />
+    </linearGradient>
+
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+
+    <linearGradient id="cyan-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+
+    <linearGradient id="emerald-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(56, 189, 248, 0.4)" />
+      <stop offset="50%" stop-color="rgba(37, 99, 235, 0.2)" />
+      <stop offset="100%" stop-color="rgba(16, 185, 129, 0.3)" />
+    </linearGradient>
+
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(15, 23, 42, 0.75)" />
+      <stop offset="100%" stop-color="rgba(10, 15, 29, 0.85)" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(56, 189, 248, 0.05)" stroke-width="1" />
+      <circle cx="40" cy="40" r="1" fill="rgba(6, 182, 212, 0.2)" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- CSS Keyframe Animations -->
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.04); }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-4px); }
+      }
+      @keyframes liveDot {
+        0%, 100% { r: 4.5px; opacity: 1; }
+        50% { r: 6.5px; opacity: 0.5; }
+      }
+      .pulse-orb {
+        animation: pulseGlow 6s ease-in-out infinite alternate;
+        transform-origin: center;
+      }
+      .cursor-blink {
+        animation: blink 1s step-end infinite;
+      }
+      .floating-card {
+        animation: floatSlow 5s ease-in-out infinite;
+      }
+      .live-indicator {
+        animation: liveDot 2s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .code-font {
+        font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+      }
+      .sans-font {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', 'Helvetica Neue', sans-serif;
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="380" rx="16" fill="url(#bg-grad)" stroke="url(#card-border)" stroke-width="1.5" />
+  <rect width="1200" height="380" rx="16" fill="url(#cyber-grid)" />
+
+  <!-- Ambient Light Orbs -->
+  <circle class="pulse-orb" cx="150" cy="70" r="160" fill="#2563EB" opacity="0.18" filter="url(#glow)" />
+  <circle class="pulse-orb" cx="1050" cy="300" r="180" fill="#06B6D4" opacity="0.15" filter="url(#glow)" />
+  <circle class="pulse-orb" cx="620" cy="360" r="130" fill="#10B981" opacity="0.12" filter="url(#glow)" />
+
+  <!-- Top Terminal Header Bar -->
+  <g id="terminal-bar">
+    <rect x="0" y="0" width="1200" height="42" rx="16" fill="rgba(15, 23, 42, 0.65)" />
+    <path d="M 0 42 L 1200 42" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    
+    <!-- Window Controls -->
+    <circle cx="28" cy="21" r="5.5" fill="#EF4444" opacity="0.9" />
+    <circle cx="48" cy="21" r="5.5" fill="#F59E0B" opacity="0.9" />
+    <circle cx="68" cy="21" r="5.5" fill="#10B981" opacity="0.9" />
+
+    <!-- Terminal Title -->
+    <text x="100" y="26" fill="#94A3B8" font-size="12" class="code-font" letter-spacing="0.5">wasif@arch-system: ~/profile (zsh) — v2.6.4</text>
+
+    <!-- Top Right Availability Pill -->
+    <g transform="translate(860, 10)">
+      <rect width="315" height="23" rx="11.5" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1" />
+      <circle class="live-indicator" cx="16" cy="11.5" r="4.5" fill="#10B981" />
+      <circle cx="16" cy="11.5" r="4.5" fill="#10B981" filter="url(#soft-glow)" />
+      <text x="32" y="16" fill="#34D399" font-size="11" font-weight="600" class="code-font" letter-spacing="0.5">OPEN FOR ROLES &amp; INTERNSHIPS</text>
+    </g>
+  </g>
+
+  <!-- Left Main Column: Identity & Branding -->
+  <g transform="translate(56, 74)">
+    <!-- Sub-tag badge -->
+    <g transform="translate(0, 0)">
+      <rect width="210" height="24" rx="6" fill="rgba(6, 182, 212, 0.1)" stroke="rgba(6, 182, 212, 0.3)" stroke-width="1" />
+      <text x="12" y="16" fill="#06B6D4" font-size="11" font-weight="700" class="code-font" letter-spacing="1.2">&gt; HELLO_WORLD.SH</text>
+    </g>
+
+    <!-- Main Name Title -->
+    <text x="0" y="68" fill="url(#text-grad)" font-size="46" font-weight="800" class="sans-font" letter-spacing="-0.8">T.M. Wasif Jamee</text>
+
+    <!-- Dynamic Subtitle / Roles -->
+    <g transform="translate(0, 104)">
+      <text x="0" y="0" fill="#38BDF8" font-size="17" font-weight="600" class="code-font">AI Engineer</text>
+      <text x="125" y="0" fill="#64748B" font-size="16" class="sans-font">•</text>
+      <text x="145" y="0" fill="#F8FAFC" font-size="17" font-weight="600" class="code-font">MERN Stack Developer</text>
+      <text x="355" y="0" fill="#64748B" font-size="16" class="sans-font">•</text>
+      <text x="375" y="0" fill="#10B981" font-size="17" font-weight="600" class="code-font">AIUB CSE</text>
+      <rect class="cursor-blink" x="480" y="-14" width="8" height="18" fill="#38BDF8" />
+    </g>
+
+    <!-- Bio / Elevator Pitch -->
+    <text x="0" y="142" fill="#94A3B8" font-size="13.5" class="sans-font" font-weight="400">
+      Architecting production-grade AI platforms, resilient distributed backends,
+    </text>
+    <text x="0" y="164" fill="#94A3B8" font-size="13.5" class="sans-font" font-weight="400">
+      and performant real-time applications with clean software engineering rigor.
+    </text>
+
+    <!-- Fast Specs Badges -->
+    <g transform="translate(0, 196)">
+      <!-- Badge 1: Location -->
+      <g transform="translate(0, 0)">
+        <rect width="140" height="28" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+        <circle cx="16" cy="14" r="3.5" fill="#38BDF8" />
+        <text x="28" y="18" fill="#CBD5E1" font-size="11.5" class="code-font">Dhaka, BD</text>
+      </g>
+
+      <!-- Badge 2: Target Companies -->
+      <g transform="translate(150, 0)">
+        <rect width="185" height="28" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+        <circle cx="16" cy="14" r="3.5" fill="#A855F7" />
+        <text x="28" y="18" fill="#CBD5E1" font-size="11.5" class="code-font">Global &amp; Remote Ready</text>
+      </g>
+
+      <!-- Badge 3: Code Focus -->
+      <g transform="translate(345, 0)">
+        <rect width="185" height="28" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+        <circle cx="16" cy="14" r="3.5" fill="#10B981" />
+        <text x="28" y="18" fill="#CBD5E1" font-size="11.5" class="code-font">Top 1% Engineering</text>
+      </g>
+    </g>
+
+    <!-- Social / Repo Quick Links Bar -->
+    <g transform="translate(0, 244)">
+      <text x="0" y="12" fill="#64748B" font-size="11" class="code-font">STACK_CORE: [ TypeScript, Next.js 16, Python, C++, MongoDB, Node.js, PyTorch ]</text>
+    </g>
+  </g>
+
+  <!-- Right Dashboard Widget (Glassmorphism Developer Cockpit) -->
+  <g class="floating-card" transform="translate(680, 72)">
+    <!-- Glassmorphic Container -->
+    <rect width="464" height="260" rx="14" fill="url(#card-bg)" stroke="url(#card-border)" stroke-width="1.2" />
+    
+    <!-- Widget Header -->
+    <rect width="464" height="36" rx="14" fill="rgba(255, 255, 255, 0.03)" />
+    <path d="M 0 36 L 464 36" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1" />
+    <circle cx="22" cy="18" r="4" fill="#38BDF8" />
+    <text x="36" y="22" fill="#E2E8F0" font-size="11.5" font-weight="600" class="code-font" letter-spacing="0.5">DEV_DASHBOARD :: SYSTEM_METRICS</text>
+    <text x="400" y="22" fill="#10B981" font-size="11" class="code-font">STATUS: 200</text>
+
+    <!-- Metric Rows -->
+    <!-- Row 1: Flagship Project -->
+    <g transform="translate(20, 52)">
+      <rect width="424" height="42" rx="8" fill="rgba(37, 99, 235, 0.08)" stroke="rgba(37, 99, 235, 0.25)" stroke-width="1" />
+      <text x="14" y="20" fill="#93C5FD" font-size="10.5" font-weight="700" class="code-font">FLAGSHIP SYSTEM</text>
+      <text x="14" y="34" fill="#F8FAFC" font-size="13" font-weight="700" class="sans-font">ReliefAI — Autonomous Crisis &amp; Disaster Response</text>
+      <rect x="345" y="10" width="68" height="20" rx="4" fill="rgba(16, 185, 129, 0.15)" />
+      <text x="353" y="24" fill="#34D399" font-size="10" font-weight="600" class="code-font">AI+SOCKET</text>
+    </g>
+
+    <!-- Row 2: Market & Logistics -->
+    <g transform="translate(20, 102)">
+      <rect width="424" height="42" rx="8" fill="rgba(6, 182, 212, 0.07)" stroke="rgba(6, 182, 212, 0.22)" stroke-width="1" />
+      <text x="14" y="20" fill="#67E8F9" font-size="10.5" font-weight="700" class="code-font">PRODUCTION APP</text>
+      <text x="14" y="34" fill="#F8FAFC" font-size="13" font-weight="700" class="sans-font">BazarDor — Commodity Intelligence &amp; Analytics</text>
+      <rect x="352" y="10" width="61" height="20" rx="4" fill="rgba(6, 182, 212, 0.15)" />
+      <text x="360" y="24" fill="#38BDF8" font-size="10" font-weight="600" class="code-font">NEXT 16</text>
+    </g>
+
+    <!-- Row 3: Engineering KPI Counters -->
+    <g transform="translate(20, 154)">
+      <!-- Col 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="134" height="54" rx="8" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(255, 255, 255, 0.07)" stroke-width="1" />
+        <text x="12" y="20" fill="#94A3B8" font-size="10" class="code-font">ARCHITECTURE</text>
+        <text x="12" y="42" fill="#38BDF8" font-size="16" font-weight="700" class="sans-font">Full-Stack AI</text>
+      </g>
+
+      <!-- Col 2 -->
+      <g transform="translate(144, 0)">
+        <rect width="134" height="54" rx="8" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(255, 255, 255, 0.07)" stroke-width="1" />
+        <text x="12" y="20" fill="#94A3B8" font-size="10" class="code-font">ALGORITHMS</text>
+        <text x="12" y="42" fill="#A78BFA" font-size="16" font-weight="700" class="sans-font">C++ / Python</text>
+      </g>
+
+      <!-- Col 3 -->
+      <g transform="translate(288, 0)">
+        <rect width="136" height="54" rx="8" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(255, 255, 255, 0.07)" stroke-width="1" />
+        <text x="12" y="20" fill="#94A3B8" font-size="10" class="code-font">ACADEMIC</text>
+        <text x="12" y="42" fill="#34D399" font-size="16" font-weight="700" class="sans-font">AIUB CSE</text>
+      </g>
+    </g>
+
+    <!-- Bottom Status Line inside card -->
+    <g transform="translate(20, 222)">
+      <circle cx="6" cy="18" r="3" fill="#10B981" />
+      <text x="18" y="22" fill="#94A3B8" font-size="11" class="code-font">Targeting: Google • Microsoft • NVIDIA • Meta • Top Startups</text>
+    </g>
+  </g>
+</svg>

@@ -3,17 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>T.M. Wasif Jamee — AI Engineer & Full-Stack Systems Architect</title>
-  <meta name="description" content="Portfolio of T.M. Wasif Jamee: AI Engineer, MERN Stack Developer, and Computer Science & Engineering Student at AIUB. Specializing in real-time crisis platforms, distributed systems, and modern web architectures.">
-  <meta name="keywords" content="T.M. Wasif Jamee, Wasif109160, AI Engineer, MERN Stack, Full Stack Developer, ReliefAI, Next.js, AIUB, Software Engineer, Portfolio">
+  <title>T.M. Wasif Jamee | Software Engineer Intern • Full Stack Developer • AI Engineer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of T.M. Wasif Jamee: Software Engineer Intern, Full Stack Developer, and AI Engineer at AIUB. Specializing in real-time crisis coordination (ReliefAI), distributed systems, and production web platforms.">
+  <meta name="keywords" content="Software Engineer Intern, Full Stack Developer, AI Engineer, MERN Stack Developer, T.M. Wasif Jamee, Wasif109160, ReliefAI, AIUB, TypeScript, Next.js, Distributed Systems">
   <meta name="author" content="T.M. Wasif Jamee">
   <meta name="theme-color" content="#070B14">
 
-  <!-- OpenGraph Meta Tags -->
-  <meta property="og:title" content="T.M. Wasif Jamee — AI Engineer & Full-Stack Architect">
-  <meta property="og:description" content="Engineering resilient distributed systems, real-time crisis coordination engines, and high-performance full-stack web applications.">
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="T.M. Wasif Jamee | Software Engineer Intern • Full Stack Developer • AI Engineer">
+  <meta property="og:description" content="Software Engineering student at AIUB architecting production-ready AI crisis platforms, distributed systems, and high-performance full-stack applications.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://github.com/Wasif109160">
+  <meta property="og:image" content="./images/profile.jpeg">
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="T.M. Wasif Jamee | Software Engineer Intern • Full Stack Developer • AI Engineer">
+  <meta name="twitter:description" content="Software Engineering student at AIUB building ReliefAI, market analytics systems, and high-throughput web applications.">
+  <meta name="twitter:image" content="./images/profile.jpeg">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./src/style.css">
@@ -39,11 +48,12 @@
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
           <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
-          <li><a href="#systems" class="nav-link" id="nav-systems">Systems</a></li>
+          <li><a href="#systems" class="nav-link" id="nav-systems">Case Studies</a></li>
           <li><a href="#architecture" class="nav-link" id="nav-architecture">Architecture</a></li>
           <li><a href="#skills" class="nav-link" id="nav-skills">Tech Stack</a></li>
+          <li><a href="#telemetry" class="nav-link" id="nav-telemetry">GitHub Stats</a></li>
+          <li><a href="#resume" class="nav-link" id="nav-resume">Resume</a></li>
           <li><a href="#console" class="nav-link" id="nav-console">Console</a></li>
-          <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
           <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
         </ul>
       </nav>
@@ -53,6 +63,10 @@
         <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">
           <span id="theme-icon">☀️</span>
         </button>
+        <a href="./Wasif_Jamee_Resume.pdf" download="Wasif_Jamee_Resume.pdf" class="btn btn-secondary btn-sm" id="btn-header-resume">
+          <span>CV</span>
+          <span>↓</span>
+        </a>
         <a href="#contact" class="btn btn-primary btn-sm" id="btn-hire-me">Hire Wasif</a>
         <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
           ☰
@@ -63,11 +77,12 @@
     <!-- Mobile Drawer -->
     <div class="mobile-nav-drawer" id="mobile-nav-drawer">
       <a href="#about" class="nav-link mobile-nav-link">About</a>
-      <a href="#systems" class="nav-link mobile-nav-link">Systems</a>
+      <a href="#systems" class="nav-link mobile-nav-link">Case Studies</a>
       <a href="#architecture" class="nav-link mobile-nav-link">Architecture</a>
       <a href="#skills" class="nav-link mobile-nav-link">Tech Stack</a>
+      <a href="#telemetry" class="nav-link mobile-nav-link">GitHub Stats</a>
+      <a href="#resume" class="nav-link mobile-nav-link">Resume</a>
       <a href="#console" class="nav-link mobile-nav-link">Console</a>
-      <a href="#education" class="nav-link mobile-nav-link">Education</a>
       <a href="#contact" class="nav-link mobile-nav-link">Contact</a>
     </div>
   </header>
@@ -79,15 +94,16 @@
         
         <!-- Left Hero Content -->
         <div class="hero-content">
+          <!-- Recruiter-Focused Status Badge Requested by User -->
           <div class="hero-badge-wrap">
-            <span class="badge badge-live">
+            <span class="badge badge-live" id="hero-status-badge">
               <span class="pulse-dot"></span>
-              Open to SWE & AI Internships 2026/2027
+              Open to Software Engineering Internships &amp; Remote Opportunities
             </span>
           </div>
 
           <h1 class="hero-title">
-            Architecting <span class="text-gradient">Real-Time AI</span> &amp; Resilient Systems
+            Architecting <span class="text-gradient">Real-Time AI</span> &amp; Scalable Web Platforms
           </h1>
 
           <!-- Dynamic Typewriter -->
@@ -97,18 +113,34 @@
             <span class="typewriter-cursor"></span>
           </div>
 
+          <!-- Recruiter-Targeted Role Badges Requested by User -->
+          <div class="target-roles-row" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+            <span class="badge" style="background: rgba(37, 99, 235, 0.15); border-color: rgba(37, 99, 235, 0.35); color: #60A5FA;">
+              🎯 Software Engineer Intern
+            </span>
+            <span class="badge" style="background: rgba(6, 182, 212, 0.15); border-color: rgba(6, 182, 212, 0.35); color: #38BDF8;">
+              ⚡ MERN Stack Developer
+            </span>
+            <span class="badge" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.35); color: #34D399;">
+              🧠 AI + Full Stack Engineering
+            </span>
+            <span class="badge" style="background: rgba(139, 92, 246, 0.15); border-color: rgba(139, 92, 246, 0.35); color: #C084FC;">
+              🎓 AIUB CSE Student
+            </span>
+          </div>
+
           <p class="hero-bio">
-            Hi, I'm <strong>T.M. Wasif Jamee</strong> — a Computer Science &amp; Engineering undergraduate at <strong>AIUB</strong> and a Full-Stack AI Engineer. I design mission-critical platforms like <strong>ReliefAI</strong>, high-concurrency microservices, and reactive web applications engineered for speed, scalability, and impact.
+            Hi, I'm <strong>T.M. Wasif Jamee</strong> — a Computer Science &amp; Engineering student at <strong>American International University-Bangladesh (AIUB)</strong>. I engineer production-tested systems including <strong>ReliefAI</strong> (autonomous crisis coordination &amp; telemetry), high-concurrency microservices, and reactive full-stack web applications built for zero-latency execution.
           </p>
 
           <div class="hero-actions">
             <a href="#systems" class="btn btn-primary" id="btn-explore-systems">
-              <span>Explore Featured Systems</span>
+              <span>View Engineering Case Studies</span>
               <span>↓</span>
             </a>
-            <a href="#console" class="btn btn-secondary" id="btn-launch-terminal">
-              <span>Interactive Console</span>
-              <span>&gt;_</span>
+            <a href="#resume" class="btn btn-secondary" id="btn-hero-resume">
+              <span>Resume &amp; Credentials</span>
+              <span>📄</span>
             </a>
             <a href="https://github.com/Wasif109160" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-github-link">
               <span>GitHub (@Wasif109160)</span>
@@ -118,8 +150,8 @@
 
           <div class="hero-terminal-pill">
             <span class="pill-prompt">$</span>
-            <span>whoami --engineering-focus</span>
-            <span style="color: var(--accent-cyan);">→ Full-Stack AI • Distributed Systems • Algorithmic Optimization</span>
+            <span>whoami --recruiter-summary</span>
+            <span style="color: var(--accent-cyan);">→ Full-Stack AI • Distributed Web • Algorithmic Rigor • AIUB CSE</span>
           </div>
         </div>
 
@@ -137,14 +169,14 @@
               >
               <div class="profile-status-overlay">
                 <span class="pulse-dot"></span>
-                <span>Available for Global Relocation & Remote</span>
+                <span>Open for Global Relocation &amp; Remote</span>
               </div>
             </div>
 
             <div class="profile-meta-row">
               <div>
                 <h2 class="profile-meta-name">T.M. Wasif Jamee</h2>
-                <div class="profile-meta-title">AI Engineer & MERN Stack Developer</div>
+                <div class="profile-meta-title">Software Engineer Intern • Full Stack Developer</div>
               </div>
               <span class="badge">AIUB CSE</span>
             </div>
@@ -155,12 +187,12 @@
 
             <div class="profile-stats-grid">
               <div class="profile-stat-box">
-                <div class="stat-box-val" id="profile-stat-repos">16+</div>
+                <div class="stat-box-val" id="profile-stat-repos">16</div>
                 <div class="stat-box-lbl">Public Repositories</div>
               </div>
               <div class="profile-stat-box">
                 <div class="stat-box-val">Dhaka</div>
-                <div class="stat-box-lbl">Location (Ready to Relocate)</div>
+                <div class="stat-box-lbl">Location (Relocation Ready)</div>
               </div>
               <div class="profile-stat-box">
                 <div class="stat-box-val">Next.js 16</div>
@@ -186,22 +218,22 @@
       </div>
     </section>
 
-    <!-- Featured Engineering Systems Section -->
+    <!-- Featured Engineering Systems / Case Studies Section -->
     <section class="section" id="systems">
       <div class="container">
         <div class="section-header">
           <div class="section-eyebrow">
-            <span>// PRODUCTION &amp; RESEARCH ARCHITECTURES</span>
+            <span>// RECRUITER CASE STUDIES &amp; ARCHITECTURES</span>
           </div>
-          <h2 class="section-title">Featured Engineering Systems</h2>
+          <h2 class="section-title">Engineering Case Studies</h2>
           <p class="section-subtitle">
-            Engineered with strict types, deterministic state management, and production-tested API contracts. Click "Inspect Architecture" for system design breakdowns.
+            In-depth breakdowns showing real problems, technical architecture, individual contributions, challenges solved, and verified GitHub codebases.
           </p>
         </div>
 
         <!-- Filter Tabs -->
         <div class="filter-tabs" id="project-filter-tabs">
-          <button class="filter-btn active" data-filter="all" id="filter-all">All Systems</button>
+          <button class="filter-btn active" data-filter="all" id="filter-all">All Case Studies</button>
           <button class="filter-btn" data-filter="ai" id="filter-ai">AI &amp; Crisis Platforms</button>
           <button class="filter-btn" data-filter="web" id="filter-web">Web &amp; Distributed Systems</button>
           <button class="filter-btn" data-filter="graphics" id="filter-graphics">Graphics &amp; Systems</button>
@@ -223,7 +255,7 @@
           </div>
           <h2 class="section-title">ReliefAI Real-Time Dispatch Pipeline</h2>
           <p class="section-subtitle">
-            Interactive multi-agency crisis coordination dataflow illustrating low-latency incident triage from citizen SOS to field deployment.
+            Interactive multi-agency crisis coordination dataflow illustrating low-latency incident triage from citizen SOS to field deployment. Click nodes to inspect specifications.
           </p>
         </div>
 
@@ -291,6 +323,160 @@
       </div>
     </section>
 
+    <!-- Real GitHub Telemetry & Stats Section Requested by User -->
+    <section class="section" id="telemetry" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span>// REAL GITHUB TELEMETRY (@Wasif109160)</span>
+          </div>
+          <h2 class="section-title">Live GitHub Activity &amp; Language Breakdown</h2>
+          <p class="section-subtitle">
+            Verified public engineering telemetry synchronized directly from GitHub API for Wasif109160.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem; margin-bottom: 2.5rem;">
+          
+          <!-- GitHub Profile Card -->
+          <div class="contact-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="font-size: 1.75rem;">🐙</span>
+                  <div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700;">Wasif109160</h3>
+                    <div style="font-size: 0.8rem; color: var(--accent-cyan); font-family: var(--font-mono);">github.com/Wasif109160</div>
+                  </div>
+                </div>
+                <span class="badge badge-live">Verified API</span>
+              </div>
+              <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                Actively pushing code across crisis dispatch algorithms, market intelligence systems, and university engineering labs.
+              </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; text-align: center; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+              <div class="profile-stat-box">
+                <div class="stat-box-val" style="color: var(--accent-cyan);">16</div>
+                <div class="stat-box-lbl">Public Repos</div>
+              </div>
+              <div class="profile-stat-box">
+                <div class="stat-box-val" style="color: var(--accent-emerald);">2</div>
+                <div class="stat-box-lbl">Followers</div>
+              </div>
+              <div class="profile-stat-box">
+                <div class="stat-box-val" style="color: #F59E0B;">3</div>
+                <div class="stat-box-lbl">Following</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Language Distribution -->
+          <div class="contact-card">
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">Repository Language Distribution</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.85rem;" id="github-lang-breakdown">
+              <!-- Dynamically populated from githubTelemetry in data.js -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Contribution Graph Widgets -->
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+          <div style="width: 100%; display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;">
+            <img 
+              src="https://github-readme-stats.vercel.app/api?username=Wasif109160&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1424&title_color=38BDF8&icon_color=06B6D4&text_color=94A3B8" 
+              alt="Wasif's GitHub Stats" 
+              style="max-width: 100%; width: 490px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);"
+              loading="lazy"
+            >
+            <img 
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wasif109160&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1424&title_color=10B981&text_color=94A3B8" 
+              alt="Wasif's Top Languages" 
+              style="max-width: 100%; width: 380px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);"
+              loading="lazy"
+            >
+          </div>
+          <a href="https://github.com/Wasif109160?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            <span>Explore All 16 Repositories on GitHub</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Resume Section Requested by User -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span>// RECRUITER CREDENTIALS &amp; CURRICULUM VITAE</span>
+          </div>
+          <h2 class="section-title">Professional Resume &amp; Profile</h2>
+          <p class="section-subtitle">
+            Download or preview the official resume of T.M. Wasif Jamee for Software Engineering and AI Internship recruitment.
+          </p>
+        </div>
+
+        <div class="education-card" style="margin-bottom: 2rem;">
+          <div class="edu-icon-badge">📄</div>
+          <div class="edu-details" style="width: 100%;">
+            <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: gap: 1rem; margin-bottom: 0.75rem;">
+              <div>
+                <h3 class="edu-institution" style="margin-bottom: 0.25rem;">T.M. Wasif Jamee — Curriculum Vitae</h3>
+                <div class="edu-degree">Software Engineer Intern • Full Stack Developer • AIUB CSE</div>
+              </div>
+              <span class="badge badge-live">Verified Document (PDF)</span>
+            </div>
+
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
+              Contains verified academic transcripts, production software engineering achievements, architecture experience (ReliefAI, BazarDor, FitLog), programming proficiencies in C++, TypeScript, Python, and leadership track record.
+            </p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+              <!-- Download CV Button Requested by User -->
+              <a href="./Wasif_Jamee_Resume.pdf" download="Wasif_Jamee_Resume.pdf" class="btn btn-primary" id="btn-download-cv">
+                <span>Download Official CV (PDF)</span>
+                <span>↓</span>
+              </a>
+
+              <!-- View Resume Button Requested by User -->
+              <button class="btn btn-secondary" id="btn-view-resume">
+                <span>View Resume in Browser</span>
+                <span>👁️</span>
+              </button>
+
+              <a href="https://www.linkedin.com/in/t-m-wasif-jamee-687094297/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-resume-linkedin">
+                <span>Verify on LinkedIn</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resume Highlights Snapshot -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
+          <div class="profile-stat-box" style="padding: 1.25rem;">
+            <div style="font-size: 1.25rem; margin-bottom: 0.35rem;">🎯</div>
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Target Roles</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Software Engineer Intern, AI Engineering Intern, Full Stack Developer</div>
+          </div>
+
+          <div class="profile-stat-box" style="padding: 1.25rem;">
+            <div style="font-size: 1.25rem; margin-bottom: 0.35rem;">🗓️</div>
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Availability Window</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Summer &amp; Fall 2026 / 2027 (Immediate interview scheduling)</div>
+          </div>
+
+          <div class="profile-stat-box" style="padding: 1.25rem;">
+            <div style="font-size: 1.25rem; margin-bottom: 0.35rem;">🌍</div>
+            <div style="font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">Location Flexibility</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Open to Remote Worldwide &amp; Onsite Relocation</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Recruiter & Developer Interactive Console -->
     <section class="section" id="console">
       <div class="container">
@@ -316,9 +502,9 @@
           </div>
 
           <div class="terminal-body" id="terminal-body">
-            <div class="terminal-log-line">Welcome to T.M. Wasif Jamee's Engineering Console [Version 2.4.0].</div>
+            <div class="terminal-log-line">Welcome to T.M. Wasif Jamee's Engineering Console [Version 2.5.0].</div>
             <div class="terminal-log-line">Type <span style="color: #38BDF8;">'help'</span> to see available commands or click the chips below.</div>
-            <div class="terminal-log-line" style="color: #10B981;">STATUS: System online. Ready for candidate inspection.</div>
+            <div class="terminal-log-line" style="color: #10B981;">STATUS: System online. Ready for recruiter candidate inspection.</div>
           </div>
 
           <!-- Quick Run Chips -->
@@ -326,6 +512,8 @@
             <button class="terminal-chip" data-cmd="whoami">whoami</button>
             <button class="terminal-chip" data-cmd="projects">projects</button>
             <button class="terminal-chip" data-cmd="skills">skills</button>
+            <button class="terminal-chip" data-cmd="github">github</button>
+            <button class="terminal-chip" data-cmd="resume">resume</button>
             <button class="terminal-chip" data-cmd="education">education</button>
             <button class="terminal-chip" data-cmd="status">status</button>
             <button class="terminal-chip" data-cmd="contact">contact</button>
@@ -339,7 +527,7 @@
               type="text" 
               class="terminal-input" 
               id="terminal-input" 
-              placeholder="Type command (e.g. 'projects', 'whoami', 'help')..." 
+              placeholder="Type command (e.g. 'projects', 'whoami', 'resume', 'help')..." 
               autocomplete="off" 
               spellcheck="false"
             >
@@ -349,48 +537,8 @@
       </div>
     </section>
 
-    <!-- Academic Foundation Section -->
-    <section class="section" id="education" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-eyebrow">
-            <span>// ACADEMIC RIGOR &amp; COMPUTER SCIENCE</span>
-          </div>
-          <h2 class="section-title">University Education &amp; Fundamentals</h2>
-          <p class="section-subtitle">
-            Solid foundations in computer systems, algorithm analysis, discrete math, and modern software engineering methodologies.
-          </p>
-        </div>
-
-        <div class="education-card">
-          <div class="edu-icon-badge">🎓</div>
-          <div class="edu-details">
-            <h3 class="edu-institution">American International University-Bangladesh (AIUB)</h3>
-            <div class="edu-degree">Bachelor of Science in Computer Science &amp; Engineering (CSE)</div>
-            <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.25rem;">
-              Dhaka, Bangladesh • Undergraduate Degree (In Progress)
-            </p>
-            <ul class="edu-highlights-list">
-              <li class="edu-highlight-item">
-                <span style="color: var(--accent-emerald);">✔</span>
-                <span><strong>Core Rigor:</strong> Data Structures &amp; Algorithms, Object-Oriented Analysis &amp; Design (OOAD), Operating Systems, and Database Management Systems.</span>
-              </li>
-              <li class="edu-highlight-item">
-                <span style="color: var(--accent-emerald);">✔</span>
-                <span><strong>Specialized Lab Work:</strong> Distributed Web Architectures, Microservices, Real-Time Networking, and OpenGL Computer Graphics.</span>
-              </li>
-              <li class="edu-highlight-item">
-                <span style="color: var(--accent-emerald);">✔</span>
-                <span><strong>Engineering Team Projects:</strong> Lead architect across multi-tier term projects including enterprise ERP systems and crisis relief platforms.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Recruiter Connect & Contact Section -->
-    <section class="section" id="contact">
+    <section class="section" id="contact" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle);">
       <div class="container">
         <div class="section-header">
           <div class="section-eyebrow">
@@ -400,6 +548,29 @@
           <p class="section-subtitle">
             I am actively interviewing for Software Engineering and AI internships (Summer/Fall 2026/2027) as well as remote junior SDE positions globally.
           </p>
+        </div>
+
+        <!-- 4 Recruiter Action Buttons Requested by User -->
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 3rem;">
+          <a href="https://www.linkedin.com/in/t-m-wasif-jamee-687094297/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-contact-linkedin">
+            <span>LinkedIn Profile</span>
+            <span>↗</span>
+          </a>
+
+          <a href="https://github.com/Wasif109160" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-contact-github">
+            <span>GitHub (@Wasif109160)</span>
+            <span>↗</span>
+          </a>
+
+          <a href="mailto:wasifjamee05@gmail.com" class="btn btn-secondary" id="btn-contact-email-link">
+            <span>Email (wasifjamee05@gmail.com)</span>
+            <span>✉️</span>
+          </a>
+
+          <a href="./Wasif_Jamee_Resume.pdf" download="Wasif_Jamee_Resume.pdf" class="btn btn-outline" id="btn-contact-download-resume">
+            <span>Download Resume (PDF)</span>
+            <span>↓</span>
+          </a>
         </div>
 
         <div class="contact-grid">
@@ -440,7 +611,7 @@
                   <div class="channel-icon">🐙</div>
                   <div>
                     <div class="channel-label">GitHub Repositories</div>
-                    <div class="channel-val">@Wasif109160 (16+ Repos)</div>
+                    <div class="channel-val">@Wasif109160 (16 Public Repos)</div>
                   </div>
                 </div>
                 <span class="btn btn-secondary btn-sm">Follow ↗</span>
@@ -507,7 +678,7 @@
             T.M. Wasif Jamee
           </div>
           <div class="footer-copy">
-            AI Engineer • MERN Stack Developer • AIUB Undergraduate
+            Software Engineer Intern • Full Stack Developer • AIUB Undergraduate
           </div>
         </div>
 
@@ -534,12 +705,31 @@
     <span id="toast-msg">Email copied to clipboard!</span>
   </div>
 
-  <!-- Architecture Inspection Modal -->
+  <!-- Architecture Inspection / Case Study Modal -->
   <div class="modal-backdrop" id="arch-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
     <div class="modal-dialog">
       <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">✕</button>
       <div id="modal-content">
         <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Preview Modal -->
+  <div class="modal-backdrop" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-dialog" style="max-width: 850px; height: 90vh;">
+      <button class="modal-close-btn" id="resume-modal-close-btn" aria-label="Close resume dialog">✕</button>
+      <div style="height: 100%; display: flex; flex-direction: column;">
+        <div style="margin-bottom: 1rem; display: flex; align-items: center; justify-content: space-between;">
+          <h2 id="resume-modal-title" style="font-size: 1.4rem; font-weight: 700;">Curriculum Vitae — T.M. Wasif Jamee</h2>
+          <a href="./Wasif_Jamee_Resume.pdf" download="Wasif_Jamee_Resume.pdf" class="btn btn-primary btn-sm">
+            <span>Download PDF</span>
+            <span>↓</span>
+          </a>
+        </div>
+        <div style="flex: 1; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden; background: #0F172A;">
+          <iframe src="./Wasif_Jamee_Resume.pdf" style="width: 100%; height: 100%; border: none;" title="Wasif Jamee Resume Preview"></iframe>
+        </div>
       </div>
     </div>
   </div>

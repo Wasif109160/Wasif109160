@@ -2,7 +2,7 @@
  * T.M. Wasif Jamee — Engineering Portfolio Logic & Interactivity
  */
 
-import { personalInfo, metrics, projects, skillCategories, terminalCommands } from './data.js';
+import { personalInfo, metrics, projects, skillCategories, terminalCommands, githubTelemetry } from './data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
@@ -11,10 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
   initProjects();
   initArchitectureDiagram();
   initSkills();
+  initGithubTelemetry();
   initTerminal();
   initContact();
   initNavigation();
   initModal();
+  initResumeModal();
   initCopyright();
 });
 
@@ -26,7 +28,6 @@ function initTheme() {
   const themeIcon = document.getElementById('theme-icon');
   const htmlEl = document.documentElement;
 
-  // Retrieve saved or system preference
   const savedTheme = localStorage.getItem('wasif-portfolio-theme') || 
     (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
 
@@ -57,11 +58,11 @@ function initTypewriter() {
   if (!textEl) return;
 
   const phrases = [
-    "AI Engineer & Full-Stack Systems Architect",
-    "Specializing in Autonomous Crisis Dispatch Platforms (ReliefAI)",
-    "MERN Stack & Next.js 16 Production Architectures",
-    "Algorithmic Problem Solving in C++ & Python",
-    "Undergraduate Student @ AIUB (Dhaka, Bangladesh)"
+    "Software Engineer Intern Target (Summer & Fall 2026/2027)",
+    "MERN Stack Developer & Real-Time Distributed Architect",
+    "AI + Full Stack Engineering — Architect of ReliefAI",
+    "Undergraduate Student @ AIUB (Dhaka, Bangladesh)",
+    "Algorithmic Problem Solving in C++, Python & TypeScript"
   ];
 
   let phraseIndex = 0;
@@ -84,11 +85,11 @@ function initTypewriter() {
 
     if (!isDeleting && charIndex === currentPhrase.length) {
       isDeleting = true;
-      typeSpeed = 1800; // Pause at end of phrase
+      typeSpeed = 1900;
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
       phraseIndex = (phraseIndex + 1) % phrases.length;
-      typeSpeed = 400; // Pause before typing new phrase
+      typeSpeed = 400;
     }
 
     setTimeout(type, typeSpeed);
@@ -112,7 +113,6 @@ function initMetrics() {
     </div>
   `).join('');
 
-  // Animate numbers when scrolled into view
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -135,7 +135,6 @@ function initMetrics() {
       function updateNumber(now) {
         const elapsed = now - startTime;
         const progress = Math.min(elapsed / duration, 1);
-        // Easing out quad
         const ease = 1 - (1 - progress) * (1 - progress);
         const current = progress === 1 ? target : (target * ease);
 
@@ -156,8 +155,8 @@ function initMetrics() {
 }
 
 /* ==========================================================================
-   Featured Systems / Project Cards & Filtering
-   (Pure code cards with NO fake cover images)
+   Featured Systems / Engineering Case Studies
+   (Problem, Solution, Architecture, Contributions, Challenges Solved)
    ========================================================================== */
 function initProjects() {
   const grid = document.getElementById('projects-grid');
@@ -187,35 +186,51 @@ function initProjects() {
         <div>
           <div class="project-header">
             <span class="project-category-badge">${p.categoryLabel}</span>
-            <span class="project-status-chip">
-              <span class="pulse-dot"></span>
-              ${p.status}
-            </span>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span class="badge" style="font-family: var(--font-mono); font-size: 0.72rem; padding: 0.2rem 0.5rem;">
+                ⭐ ${p.stars} • 🍴 ${p.forks}
+              </span>
+              <span class="project-status-chip">
+                <span class="pulse-dot"></span>
+                ${p.status}
+              </span>
+            </div>
           </div>
 
           <h3 class="project-title">${p.title}</h3>
           <div class="project-tagline">${p.tagline}</div>
-          <p class="project-summary">${p.summary}</p>
-
-          <div class="project-telemetry-row">
-            <div class="telemetry-item">
-              <span class="telemetry-lbl">Performance Benchmark</span>
-              <span class="telemetry-val">${p.metrics.latency}</span>
+          
+          <!-- Engineering Case Study Core Blocks -->
+          <div style="background: rgba(0, 0, 0, 0.22); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.1rem; margin-bottom: 1.25rem;">
+            <div style="margin-bottom: 0.75rem;">
+              <span style="font-size: 0.75rem; font-weight: 700; color: #F43F5E; text-transform: uppercase; letter-spacing: 0.05em; font-family: var(--font-mono);">
+                [ PROBLEM STATEMENT ]
+              </span>
+              <p style="font-size: 0.88rem; line-height: 1.55; color: var(--text-muted); margin-top: 0.25rem;">
+                ${p.caseStudy.problemStatement}
+              </p>
             </div>
-            <div class="telemetry-item" style="border-left: 1px solid var(--border-subtle); padding-left: 1rem;">
-              <span class="telemetry-lbl">Architecture Model</span>
-              <span class="telemetry-val">${p.metrics.scale}</span>
+
+            <div>
+              <span style="font-size: 0.75rem; font-weight: 700; color: #10B981; text-transform: uppercase; letter-spacing: 0.05em; font-family: var(--font-mono);">
+                [ SOLUTION &amp; IMPACT ]
+              </span>
+              <p style="font-size: 0.88rem; line-height: 1.55; color: var(--text-muted); margin-top: 0.25rem;">
+                ${p.caseStudy.solution}
+              </p>
             </div>
           </div>
 
-          <ul class="project-features-list">
-            ${p.highlights.slice(0, 3).map(h => `
-              <li class="project-feature-item">
-                <span class="project-feature-icon">▹</span>
-                <span>${h}</span>
-              </li>
-            `).join('')}
-          </ul>
+          <div class="project-telemetry-row">
+            <div class="telemetry-item">
+              <span class="telemetry-lbl">Performance Metric</span>
+              <span class="telemetry-val">${p.metrics.latency}</span>
+            </div>
+            <div class="telemetry-item" style="border-left: 1px solid var(--border-subtle); padding-left: 1rem;">
+              <span class="telemetry-lbl">Architecture Tier</span>
+              <span class="telemetry-val">${p.metrics.scale}</span>
+            </div>
+          </div>
 
           <div class="project-tech-tags">
             ${p.techStack.map(t => `<span class="tech-tag">${t}</span>`).join('')}
@@ -224,19 +239,18 @@ function initProjects() {
 
         <div class="project-actions">
           <button class="btn btn-secondary btn-sm btn-inspect-arch" data-project-id="${p.id}">
-            <span>Inspect Architecture</span>
-            <span>⚙️</span>
+            <span>Inspect Full Case Study</span>
+            <span>🔍</span>
           </button>
           
           <a href="${p.repoUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-            <span>GitHub Repository</span>
+            <span>GitHub Code</span>
             <span>↗</span>
           </a>
         </div>
       </article>
     `).join('');
 
-    // Attach inspect architecture modal listeners
     grid.querySelectorAll('.btn-inspect-arch').forEach(btn => {
       btn.addEventListener('click', (e) => {
         const projId = e.currentTarget.getAttribute('data-project-id');
@@ -336,6 +350,26 @@ function initSkills() {
 }
 
 /* ==========================================================================
+   GitHub Telemetry & Language Breakdown
+   ========================================================================== */
+function initGithubTelemetry() {
+  const langContainer = document.getElementById('github-lang-breakdown');
+  if (!langContainer) return;
+
+  langContainer.innerHTML = githubTelemetry.topLanguages.map(l => `
+    <div>
+      <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.25rem;">
+        <span style="font-weight: 600; color: var(--text-main);">${l.name}</span>
+        <span style="font-family: var(--font-mono); color: var(--accent-cyan);">${l.percentage}%</span>
+      </div>
+      <div style="width: 100%; height: 6px; background: rgba(255,255,255,0.08); border-radius: var(--radius-full); overflow: hidden;">
+        <div style="height: 100%; width: ${l.percentage}%; background: ${l.color}; border-radius: var(--radius-full);"></div>
+      </div>
+    </div>
+  `).join('');
+}
+
+/* ==========================================================================
    Interactive Recruiter / Developer Terminal
    ========================================================================== */
 function initTerminal() {
@@ -362,7 +396,6 @@ function initTerminal() {
   });
 
   function executeCommand(cmd) {
-    // Log user command line
     const userLine = document.createElement('div');
     userLine.className = 'terminal-log-line';
     userLine.innerHTML = `<span class="terminal-prompt-prefix">wasif@terminal:~$</span> ${escapeHtml(cmd)}`;
@@ -384,7 +417,6 @@ function initTerminal() {
     respLine.textContent = response;
     body.appendChild(respLine);
 
-    // Scroll to bottom
     body.scrollTop = body.scrollHeight;
   }
 
@@ -418,9 +450,8 @@ function initContact() {
       const subject = document.getElementById('contact-subject').value;
       const message = document.getElementById('contact-message').value;
 
-      showToast(`Thank you, ${name}! Generating mail dispatch...`);
+      showToast(`Thank you, ${name}! Preparing email dispatch...`);
 
-      // Open mailto with encoded parameters
       const mailtoLink = `mailto:${personalInfo.email}?subject=${encodeURIComponent(subject + " - " + name)}&body=${encodeURIComponent("Sender: " + name + " <" + email + ">\n\n" + message)}`;
       
       setTimeout(() => {
@@ -474,7 +505,6 @@ function initNavigation() {
     });
   }
 
-  // Active section scrollspy
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');
 
@@ -499,7 +529,7 @@ function initNavigation() {
 }
 
 /* ==========================================================================
-   Architecture Inspection Modal
+   Engineering Case Study Modal
    ========================================================================== */
 function initModal() {
   const modal = document.getElementById('arch-modal');
@@ -529,56 +559,119 @@ function openProjectModal(project) {
   const content = document.getElementById('modal-content');
   if (!modal || !content) return;
 
+  const cs = project.caseStudy;
+
   content.innerHTML = `
     <div style="margin-bottom: 1.5rem;">
-      <span class="badge" style="margin-bottom: 0.5rem;">${project.categoryLabel}</span>
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+        <span class="badge">${project.categoryLabel}</span>
+        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-cyan);">⭐ ${project.stars} Stars • Last pushed: ${project.lastPushed}</span>
+      </div>
       <h2 id="modal-project-title" style="font-size: 1.85rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.35rem;">
-        ${project.title} — System Architecture
+        ${project.title} — Engineering Case Study
       </h2>
       <div style="font-size: 0.95rem; color: var(--accent-cyan); font-weight: 600;">
         ${project.tagline}
       </div>
     </div>
 
-    <div style="margin-bottom: 1.75rem;">
-      <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">
-        Architectural Overview
-      </h3>
-      <p style="font-size: 0.92rem; line-height: 1.7; color: var(--text-muted);">
-        ${project.architecture.overview}
-      </p>
-    </div>
-
-    <div style="margin-bottom: 1.75rem;">
-      <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.75rem;">
-        Core Components &amp; Ingestion Subsystems
-      </h3>
-      <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
-        ${project.architecture.components.map(c => `
-          <li style="display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.9rem; color: var(--text-muted);">
-            <span style="color: var(--accent-cyan); font-weight: bold;">▹</span>
-            <span>${c}</span>
-          </li>
-        `).join('')}
-      </ul>
-    </div>
-
-    <div style="background: rgba(0, 0, 0, 0.25); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1rem; margin-bottom: 1.75rem;">
-      <div style="font-size: 0.78rem; color: var(--text-dim); margin-bottom: 0.25rem;">VERIFIED TECH STACK</div>
-      <div style="font-family: var(--font-mono); font-size: 0.88rem; color: var(--accent-emerald);">
-        ${project.architecture.stack}
+    <!-- Case Study Sections -->
+    <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 1.75rem;">
+      
+      <div style="background: rgba(244, 63, 94, 0.08); border-left: 3px solid #F43F5E; padding: 1rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+        <h3 style="font-size: 0.85rem; font-weight: 700; color: #F43F5E; text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.25rem;">
+          1. Problem Statement
+        </h3>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
+          ${cs.problemStatement}
+        </p>
       </div>
+
+      <div style="background: rgba(16, 185, 129, 0.08); border-left: 3px solid #10B981; padding: 1rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+        <h3 style="font-size: 0.85rem; font-weight: 700; color: #10B981; text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.25rem;">
+          2. Solution &amp; Engineering Decisions
+        </h3>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
+          ${cs.solution}
+        </p>
+      </div>
+
+      <div style="background: rgba(56, 189, 248, 0.08); border-left: 3px solid #38BDF8; padding: 1rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+        <h3 style="font-size: 0.85rem; font-weight: 700; color: #38BDF8; text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.25rem;">
+          3. Technical Architecture &amp; Dataflow
+        </h3>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
+          ${cs.techArchitecture}
+        </p>
+      </div>
+
+      <div style="background: rgba(139, 92, 246, 0.08); border-left: 3px solid #8B5CF6; padding: 1rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+        <h3 style="font-size: 0.85rem; font-weight: 700; color: #8B5CF6; text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.25rem;">
+          4. My Individual Contribution
+        </h3>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
+          ${cs.myContribution}
+        </p>
+      </div>
+
+      <div style="background: rgba(245, 158, 11, 0.08); border-left: 3px solid #F59E0B; padding: 1rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+        <h3 style="font-size: 0.85rem; font-weight: 700; color: #F59E0B; text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.25rem;">
+          5. Critical Challenges Overcome
+        </h3>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
+          ${cs.challengesSolved}
+        </p>
+      </div>
+
+      <div style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid #94A3B8; padding: 1rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+        <h3 style="font-size: 0.85rem; font-weight: 700; color: #94A3B8; text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.25rem;">
+          6. Future Engineering Roadmap
+        </h3>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
+          ${cs.futureImprovements}
+        </p>
+      </div>
+
     </div>
 
-    <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+    <div style="display: flex; gap: 1rem; justify-content: flex-end; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
       <a href="${project.repoUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-        <span>Inspect Source on GitHub</span>
+        <span>Inspect Source Code on GitHub</span>
         <span>↗</span>
       </a>
     </div>
   `;
 
   modal.classList.add('open');
+}
+
+/* ==========================================================================
+   Resume Preview Modal
+   ========================================================================== */
+function initResumeModal() {
+  const modal = document.getElementById('resume-modal');
+  const viewBtn = document.getElementById('btn-view-resume');
+  const closeBtn = document.getElementById('resume-modal-close-btn');
+
+  if (!modal || !viewBtn || !closeBtn) return;
+
+  viewBtn.addEventListener('click', () => {
+    modal.classList.add('open');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.classList.remove('open');
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) modal.classList.remove('open');
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) {
+      modal.classList.remove('open');
+    }
+  });
 }
 
 /* ==========================================================================

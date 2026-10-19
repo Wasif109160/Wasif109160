@@ -1,0 +1,193 @@
+{
+  "user": {
+    "login": "Wasif109160",
+    "id": 165663981,
+    "node_id": "U_kgDOCd_U7Q",
+    "avatar_url": "https://avatars.githubusercontent.com/u/165663981?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Wasif109160",
+    "html_url": "https://github.com/Wasif109160",
+    "followers_url": "https://api.github.com/users/Wasif109160/followers",
+    "following_url": "https://api.github.com/users/Wasif109160/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Wasif109160/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Wasif109160/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Wasif109160/subscriptions",
+    "organizations_url": "https://api.github.com/users/Wasif109160/orgs",
+    "repos_url": "https://api.github.com/users/Wasif109160/repos",
+    "events_url": "https://api.github.com/users/Wasif109160/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Wasif109160/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false,
+    "name": "Wasif Jamee",
+    "company": null,
+    "blog": "",
+    "location": "Dhaka",
+    "email": null,
+    "hireable": null,
+    "bio": "i am wasif\r\n",
+    "twitter_username": null,
+    "public_repos": 16,
+    "public_gists": 1,
+    "followers": 2,
+    "following": 3,
+    "created_at": "2024-04-01T11:35:40Z",
+    "updated_at": "2026-10-18T15:00:16Z"
+  },
+  "lang_stats": {
+    "TypeScript": 3,
+    "HTML": 1,
+    "JavaScript": 1,
+    "C++": 2,
+    "C#": 1,
+    "Java": 1
+  },
+  "total_stars": 0,
+  "total_forks": 0,
+  "repos": [
+    {
+      "name": "B14-A7-Bazar-Dor-main",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-10-10T14:51:53Z",
+      "html_url": "https://github.com/Wasif109160/B14-A7-Bazar-Dor-main"
+    },
+    {
+      "name": "B14_ASS1",
+      "description": null,
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-07-21T19:14:04Z",
+      "html_url": "https://github.com/Wasif109160/B14_ASS1"
+    },
+    {
+      "name": "Claude-Code",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-22T20:05:04Z",
+      "html_url": "https://github.com/Wasif109160/Claude-Code"
+    },
+    {
+      "name": "Fitlog",
+      "description": null,
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-26T13:19:48Z",
+      "html_url": "https://github.com/Wasif109160/Fitlog"
+    },
+    {
+      "name": "NW-Wasif",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2024-11-18T19:31:40Z",
+      "html_url": "https://github.com/Wasif109160/NW-Wasif"
+    },
+    {
+      "name": "PH-14-AS-5",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-12T22:08:32Z",
+      "html_url": "https://github.com/Wasif109160/PH-14-AS-5"
+    },
+    {
+      "name": "ReliefAI",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-10-18T14:37:19Z",
+      "html_url": "https://github.com/Wasif109160/ReliefAI"
+    },
+    {
+      "name": "software-lab-task-0",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-02-24T14:29:45Z",
+      "html_url": "https://github.com/Wasif109160/software-lab-task-0"
+    },
+    {
+      "name": "Software-lab-task-01",
+      "description": null,
+      "language": "C++",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-02-18T03:32:34Z",
+      "html_url": "https://github.com/Wasif109160/Software-lab-task-01"
+    },
+    {
+      "name": "software-lab-task-1",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-02-24T14:09:58Z",
+      "html_url": "https://github.com/Wasif109160/software-lab-task-1"
+    },
+    {
+      "name": "software-lab-task-99",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-02-24T16:58:24Z",
+      "html_url": "https://github.com/Wasif109160/software-lab-task-99"
+    },
+    {
+      "name": "Story-Scene",
+      "description": "Just finished this quirky OpenGL project \u2013 a 7\u2011scene animated love story about Wasif & Mashfi (yes, my crush \ud83d\ude04) I coded every pixel to make her smile. Because sometimes you have to render your feelings in C++! \ud83d\ude97\ud83d\udca8\u2764\ufe0f #OpenGL #CodingForLove #FunnyProject #Cpp #GraphicsProgramming #CrushGoals #AIUB",
+      "language": "C++",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-03-17T16:56:20Z",
+      "html_url": "https://github.com/Wasif109160/Story-Scene"
+    },
+    {
+      "name": "Student-Development-System",
+      "description": null,
+      "language": "C#",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-01-23T18:40:02Z",
+      "html_url": "https://github.com/Wasif109160/Student-Development-System"
+    },
+    {
+      "name": "Super-shop-management-system",
+      "description": null,
+      "language": "Java",
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2025-02-02T15:15:22Z",
+      "html_url": "https://github.com/Wasif109160/Super-shop-management-system"
+    },
+    {
+      "name": "wasif-task",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-02-24T17:38:23Z",
+      "html_url": "https://github.com/Wasif109160/wasif-task"
+    },
+    {
+      "name": "Wasif109160",
+      "description": "Config files for my GitHub profile.",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2024-11-18T19:59:06Z",
+      "html_url": "https://github.com/Wasif109160/Wasif109160"
+    }
+  ]
+}
