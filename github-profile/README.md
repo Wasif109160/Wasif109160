@@ -11,7 +11,7 @@
 
 <!-- DYNAMIC TYPING BADGE -->
 <a href="https://github.com/Wasif109160">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1800&color=38BDF8&center=true&vCenter=true&random=false&width=780&height=50&lines=AI+Engineer+%7C+MERN+Stack+Developer+%7C+AIUB+CSE;Architecting+Production-Grade+AI+%26+Distributed+Systems;Flagship%3A+ReliefAI+%E2%80%94+Autonomous+Disaster+Coordination;Actively+Seeking+Software+Engineering+%26+AI+Internships" alt="Dynamic Typing Header" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1800&color=38BDF8&center=true&vCenter=true&random=false&width=780&height=50&lines=Software+Engineering+Intern+%7C+Full+Stack+Developer+%7C+AI+Enthusiast;React+%2F+Next.js+%E2%80%A2+TypeScript+%E2%80%A2+Backend+%E2%80%A2+AI+Integration;Featured%3A+ReliefAI+%E2%80%94+AI+Disaster+Management+Platform;CSE+Undergraduate+at+AIUB" alt="Dynamic Typing Header" />
 </a>
 
 <p align="center">
@@ -33,7 +33,7 @@
 <table>
   <tr>
     <td align="center">
-      <b>🚀 RECRUITMENT STATUS:</b> Open for <b>Software Engineering Internships</b>, <b>AI Engineering Internships</b>, and <b>Remote Junior SDE</b> positions globally (Summer &amp; Fall 2026/2027).
+      <b>🚀 STATUS:</b> Open for <b>Software Engineering Internships</b>, <b>Full Stack Roles</b>, and <b>AI Engineering Opportunities</b>.
     </td>
   </tr>
 </table>
@@ -44,12 +44,12 @@
 
 ## 📌 Executive Summary
 
-I am a **Software Engineering Student at American International University-Bangladesh (AIUB)** and a **Full-Stack Developer & AI Integrator** focused on building resilient, scalable web software. My work bridges algorithmic fundamentals (C++, Python) with modern full-stack engineering (Next.js 16, TypeScript, Node.js, Gemini AI SDK, MongoDB, SQLite).
+I am a **Computer Science & Engineering Undergraduate at American International University-Bangladesh (AIUB)** and a **Full Stack Developer & AI Enthusiast**. My work bridges algorithmic fundamentals in C++ and Python with modern web engineering in Next.js 16, TypeScript, Node.js, and Google Gemini AI integrations.
 
-- 🧠 **AI & Full-Stack Systems**: Designing crisis management architectures, structured Gemini AI triage pipelines, and role-based operational portals.
-- 🏗️ **Systems & Web Architecture**: Applying clean modular architectures, strict TypeScript typing, deterministic state management, and production-tested RESTful services.
-- 🎯 **Target Roles**: Software Engineering Intern (Frontend, Backend, or Full Stack), AI Engineering Intern.
-- 🌐 **Target Ecosystems**: Global Tech, high-velocity startups, and open-source foundations.
+- 🧠 **AI & Full-Stack Systems**: Designing web platforms with structured Gemini AI triage pipelines and role-based access control.
+- 🏗️ **Software Architecture**: Applying clean modular structure, strict TypeScript typing, state management, and RESTful route handlers.
+- 🎯 **Target Roles**: Software Engineering Intern, Full Stack Developer, AI Engineering Intern.
+- 🌐 **Interests**: Software Engineering, Full Stack Web Development, and AI Integrations.
 
 ---
 
@@ -261,7 +261,7 @@ I am a **Software Engineering Student at American International University-Bangl
 
 ---
 
-## 🧭 Multi-Year Engineering Roadmap
+## 🧭 Engineering Growth Roadmap
 
 <table>
   <thead>
@@ -273,29 +273,29 @@ I am a **Software Engineering Student at American International University-Bangl
   </thead>
   <tbody>
     <tr>
-      <td><b>2026 Target</b></td>
+      <td><b>2026 Focus</b></td>
       <td>
-        • Secure Global Software Engineering / AI Internship<br/>
-        • Scale ReliefAI with production microservices &amp; real-time maps<br/>
-        • Active contributions to premier open-source repositories
+        • Software Engineering Internship in Full Stack / AI<br/>
+        • Deepen Next.js 16, TypeScript, and MongoDB engineering<br/>
+        • Contributions to open-source developer tooling
       </td>
       <td>
-        • 300+ Algorithmic Problems Solved (LeetCode)<br/>
-        • Docker &amp; CI/CD automated deployment pipelines<br/>
-        • Production deployments with 99.9% uptime
+        • Consistent problem solving in Data Structures &amp; Algorithms (C++)<br/>
+        • Automated CI/CD testing workflows with GitHub Actions<br/>
+        • Production-grade authentication and error resilience
       </td>
     </tr>
     <tr>
       <td><b>2027 Horizon</b></td>
       <td>
-        • Graduation from AIUB Computer Science &amp; Engineering<br/>
-        • High-Throughput Distributed Systems &amp; Real-time AI Infra<br/>
-        • Open Source Maintenance &amp; Research Publications
+        • Complete B.Sc. in Computer Science &amp; Engineering at AIUB<br/>
+        • Distributed backend services and database optimization<br/>
+        • Expand AI integration architectures and prompt evaluation
       </td>
       <td>
-        • Full-time Software Engineer (Tier-1 Tech / High-Growth AI)<br/>
-        • Scaled platform serving 50,000+ active users<br/>
-        • Deep expertise in Kubernetes, Go, and Vector Databases
+        • Full-time Software Engineering / Full Stack Developer role<br/>
+        • Containerization and service orchestration using Docker<br/>
+        • Robust full-stack web applications with verified test coverage
       </td>
     </tr>
   </tbody>

@@ -6,20 +6,20 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-A high-performance, recruiter-ready, hackathon-grade developer portfolio and engineering showcase for **T.M. Wasif Jamee** — AI Engineer, MERN Stack Developer, and Computer Science & Engineering undergraduate at American International University-Bangladesh (AIUB).
+Portfolio and project showcase for **T.M. Wasif Jamee** — Software Engineering Intern candidate, Full Stack Developer, and Computer Science & Engineering undergraduate at American International University-Bangladesh (AIUB).
 
 ---
 
 ## 🚀 Key Highlights & Architecture
 
-- **Code-Native Engineering Showcase**: Zero fake cover images or placeholder mockups. Built strictly using existing real project assets (`/images/profile.jpeg`), structured telemetry cards, and real repository links.
-- **Interactive Recruiter Console**: Built-in CLI terminal supporting commands (`help`, `whoami`, `projects`, `skills`, `education`, `status`, `contact`) and clickable command chips.
-- **System Design Deep-Dive**: Visual interactive state pipeline illustrating the real-time data ingestion and dispatch flow for **ReliefAI** (Citizen SOS -> AI Triage -> Geospatial Solver -> Socket.IO -> Command Center).
-- **Architecture Inspection Modal**: In-depth modal dialog allowing recruiters and engineers to inspect component architecture and design decisions for every flagship system.
+- **Code-Native Engineering Showcase**: Zero fake cover images or placeholder mockups. Built using real project assets (`/images/profile.jpeg`), structured project case studies, and verified repository links.
+- **Interactive Developer Console**: Built-in CLI terminal supporting commands (`help`, `whoami`, `projects`, `skills`, `education`, `status`, `contact`) and clickable command chips.
+- **System Design Deep-Dive**: Visual interactive state pipeline illustrating the dataflow for **ReliefAI** (Citizen SOS -> Gemini AI Triage -> MongoDB Atlas -> Jose JWT RBAC -> Multi-Role Portals).
+- **Project Case Study Modal**: Detailed modal dialog displaying Problem, Solution, Technologies Used, Key Features, Engineering Decisions, and Future Improvements.
 - **Dynamic Typewriter & Animated Counters**: Smooth micro-interactions utilizing `requestAnimationFrame` and `IntersectionObserver`.
-- **Dark & Light Mode**: Seamless glassmorphism theme engine with persistent state storage in `localStorage`.
-- **1-Click Communication**: Instant clipboard email copy with visual toast notifications and pre-filled email dispatch routing.
-- **Strict Accessibility & SEO**: Semantic HTML5 hierarchy, OpenGraph metadata, ARIA labels, responsive mobile drawer, and keyboard-navigable dialogs.
+- **Dark & Light Mode**: Modern theme engine with persistent state storage in `localStorage`.
+- **Direct Communication**: Instant clipboard email copy with visual toast notifications and pre-filled email dispatch routing.
+- **Accessibility & SEO**: Semantic HTML5 hierarchy, OpenGraph metadata, ARIA labels, responsive mobile drawer, and keyboard-navigable dialogs.
 
 ---
 

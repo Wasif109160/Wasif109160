@@ -1,8 +1,7 @@
 # 🔍 Comprehensive GitHub Profile & Repository Audit
 
 **Target Candidate:** T.M. Wasif Jamee ([@Wasif109160](https://github.com/Wasif109160))  
-**Target Roles:** Software Engineering Intern, AI Platform Intern, Junior Full-Stack Developer  
-**Target Employers:** Google, Microsoft, Amazon, NVIDIA, Meta, European Startups, Top Research Labs  
+**Target Roles:** Software Engineering Intern, Full Stack Developer, AI Engineering Intern  
 **Date of Audit:** October 2026  
 **Auditor:** Senior Engineering Director & Technical Recruiter
 
@@ -64,7 +63,7 @@ Every single public repository on your account was examined. Here is the unvarni
 ### 5. `Story-Scene`
 - **Tech Stack:** C++, OpenGL
 - **Size:** 133 KB | **README:** None
-- **Strengths:** Real low-level C++ graphics programming using OpenGL primitives and custom scene graph! Demonstrates computer graphics math and C++ fundamentals that top firms (NVIDIA, Google, Meta) respect.
+- **Strengths:** Real low-level C++ graphics programming using OpenGL primitives and custom scene graph! Demonstrates computer graphics math, linear algebra, and C++ fundamentals.
 - **Critical Weaknesses:**
   - Description is written as an informal social media post about a personal crush (`#CodingForLove #CrushGoals`). While playful, enterprise recruiters evaluate professionalism.
   - Completely missing a `README.md` in root.
@@ -128,8 +127,8 @@ Every single public repository on your account was examined. Here is the unvarni
 
 1. **The "Empty Storefront" Dilemma:** Recruiters clicking your profile saw no README, no stats, and a bio reading `"i am wasif"`. The first 15 seconds lost 95% of recruiters.
 2. **Assignment Naming Syndrome:** Projects named `B14-A7-` and `PH-14-AS-` signal "student following tutorial instructions" rather than "autonomous engineer solving real problems."
-3. **Hidden Gems:** `ReliefAI` is genuinely impressive (Next.js 16, TypeScript, Socket.IO, disaster triage), but its default branch was stuck on a fix branch and it wasn't highlighted on your profile.
-4. **Poor Git Hygiene:** Checking in `.exe` and `.o` files in `Software-lab-task-01` fails basic software engineering screening at companies like Amazon or Google.
+3. **Hidden Gems:** `ReliefAI` is genuinely impressive (Next.js 16, TypeScript, Gemini AI triage, Jose JWT security), but its default branch was stuck on a fix branch and it wasn't highlighted on your profile.
+4. **Poor Git Hygiene:** Checking in `.exe` and `.o` files in `Software-lab-task-01` fails standard software engineering screening.
 5. **Zero Repository Descriptions:** Almost none of your 16 repositories had the GitHub right-hand sidebar description filled out.
 6. **Dead Weight Repositories:** Having empty 0 KB repos (`software-lab-task-1`, `software-lab-task-99`, `NW-Wasif`) dilutes the impact of your real engineering work.
 7. **Lack of Pinned Repositories:** Without pinned repos, GitHub defaults to displaying recent or alphabetical repos (e.g. `B14-A7-Bazar-Dor-main`), hiding your flagship work.

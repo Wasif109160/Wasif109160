@@ -58,11 +58,12 @@ function initTypewriter() {
   if (!textEl) return;
 
   const phrases = [
-    "Software Engineer Intern Target (Summer & Fall 2026/2027)",
-    "MERN Stack Developer & Real-Time Distributed Architect",
-    "AI + Full Stack Engineering — Architect of ReliefAI",
-    "Undergraduate Student @ AIUB (Dhaka, Bangladesh)",
-    "Algorithmic Problem Solving in C++, Python & TypeScript"
+    "Software Engineering Intern | Full Stack Developer | AI Enthusiast",
+    "React / Next.js & Modern Frontend Architecture",
+    "TypeScript & Type-Safe Software Development",
+    "Backend Development & Database Schema Design",
+    "AI Integration with Google Gemini SDK",
+    "Computer Science Undergraduate @ AIUB"
   ];
 
   let phraseIndex = 0;
@@ -204,31 +205,34 @@ function initProjects() {
           <div style="background: rgba(0, 0, 0, 0.22); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.1rem; margin-bottom: 1.25rem;">
             <div style="margin-bottom: 0.75rem;">
               <span style="font-size: 0.75rem; font-weight: 700; color: #F43F5E; text-transform: uppercase; letter-spacing: 0.05em; font-family: var(--font-mono);">
-                [ PROBLEM STATEMENT ]
+                [ PROBLEM ]
               </span>
               <p style="font-size: 0.88rem; line-height: 1.55; color: var(--text-muted); margin-top: 0.25rem;">
-                ${p.caseStudy.problemStatement}
+                ${p.caseStudy.problem}
               </p>
             </div>
 
-            <div>
+            <div style="margin-bottom: 0.75rem;">
               <span style="font-size: 0.75rem; font-weight: 700; color: #10B981; text-transform: uppercase; letter-spacing: 0.05em; font-family: var(--font-mono);">
-                [ SOLUTION &amp; IMPACT ]
+                [ SOLUTION ]
               </span>
               <p style="font-size: 0.88rem; line-height: 1.55; color: var(--text-muted); margin-top: 0.25rem;">
                 ${p.caseStudy.solution}
               </p>
             </div>
-          </div>
 
-          <div class="project-telemetry-row">
-            <div class="telemetry-item">
-              <span class="telemetry-lbl">Performance Metric</span>
-              <span class="telemetry-val">${p.metrics.latency}</span>
-            </div>
-            <div class="telemetry-item" style="border-left: 1px solid var(--border-subtle); padding-left: 1rem;">
-              <span class="telemetry-lbl">Architecture Tier</span>
-              <span class="telemetry-val">${p.metrics.scale}</span>
+            <div>
+              <span style="font-size: 0.75rem; font-weight: 700; color: #38BDF8; text-transform: uppercase; letter-spacing: 0.05em; font-family: var(--font-mono);">
+                [ KEY FEATURES ]
+              </span>
+              <ul style="list-style: none; margin-top: 0.35rem; display: flex; flex-direction: column; gap: 0.35rem;">
+                ${p.caseStudy.keyFeatures.slice(0, 3).map(f => `
+                  <li style="font-size: 0.84rem; color: var(--text-muted); display: flex; align-items: flex-start; gap: 0.4rem;">
+                    <span style="color: var(--accent-cyan); flex-shrink: 0;">▹</span>
+                    <span>${f}</span>
+                  </li>
+                `).join('')}
+              </ul>
             </div>
           </div>
 
@@ -575,21 +579,21 @@ function openProjectModal(project) {
       </div>
     </div>
 
-    <!-- Case Study Sections -->
+    <!-- Case Study Sections as requested -->
     <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 1.75rem;">
       
       <div style="background: rgba(244, 63, 94, 0.08); border-left: 3px solid #F43F5E; padding: 1rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
         <h3 style="font-size: 0.85rem; font-weight: 700; color: #F43F5E; text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.25rem;">
-          1. Problem Statement
+          1. Problem
         </h3>
         <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
-          ${cs.problemStatement}
+          ${cs.problem}
         </p>
       </div>
 
       <div style="background: rgba(16, 185, 129, 0.08); border-left: 3px solid #10B981; padding: 1rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
         <h3 style="font-size: 0.85rem; font-weight: 700; color: #10B981; text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.25rem;">
-          2. Solution &amp; Engineering Decisions
+          2. Solution
         </h3>
         <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
           ${cs.solution}
@@ -597,35 +601,40 @@ function openProjectModal(project) {
       </div>
 
       <div style="background: rgba(56, 189, 248, 0.08); border-left: 3px solid #38BDF8; padding: 1rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
-        <h3 style="font-size: 0.85rem; font-weight: 700; color: #38BDF8; text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.25rem;">
-          3. Technical Architecture &amp; Dataflow
+        <h3 style="font-size: 0.85rem; font-weight: 700; color: #38BDF8; text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.35rem;">
+          3. Technologies Used
         </h3>
-        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
-          ${cs.techArchitecture}
-        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.35rem;">
+          ${cs.technologiesUsed.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+        </div>
       </div>
 
       <div style="background: rgba(139, 92, 246, 0.08); border-left: 3px solid #8B5CF6; padding: 1rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
         <h3 style="font-size: 0.85rem; font-weight: 700; color: #8B5CF6; text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.25rem;">
-          4. My Individual Contribution
+          4. Key Features
         </h3>
-        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
-          ${cs.myContribution}
-        </p>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.35rem; margin-top: 0.35rem;">
+          ${cs.keyFeatures.map(f => `
+            <li style="display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.88rem; color: var(--text-muted);">
+              <span style="color: var(--accent-cyan);">▹</span>
+              <span>${f}</span>
+            </li>
+          `).join('')}
+        </ul>
       </div>
 
       <div style="background: rgba(245, 158, 11, 0.08); border-left: 3px solid #F59E0B; padding: 1rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
         <h3 style="font-size: 0.85rem; font-weight: 700; color: #F59E0B; text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.25rem;">
-          5. Critical Challenges Overcome
+          5. Engineering Decisions
         </h3>
         <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
-          ${cs.challengesSolved}
+          ${cs.engineeringDecisions}
         </p>
       </div>
 
       <div style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid #94A3B8; padding: 1rem; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
         <h3 style="font-size: 0.85rem; font-weight: 700; color: #94A3B8; text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.25rem;">
-          6. Future Engineering Roadmap
+          6. Future Improvements
         </h3>
         <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted);">
           ${cs.futureImprovements}

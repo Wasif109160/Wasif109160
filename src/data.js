@@ -1,32 +1,28 @@
 /**
  * Technical Portfolio Data for T.M. Wasif Jamee
- * 100% Verified against real source code in Wasif's repositories:
- * - ReliefAI: Next.js 16.4, @google/generative-ai (Gemini SDK), Jose (JWT), Mongoose, Zod, automated security tests
- * - BazarDor: Next.js 16.4, better-auth, better-sqlite3, TailwindCSS 4, React Hot Toast
- * - FitLog: Next.js 16.3, React 19, React Compiler, LocalStorage, React Icons, React-Toastify
- * - DevStack: React, Vite, TailwindCSS 4, DaisyUI 5, Penpot & Figma UI
- * - Story-Scene: Modern C++, OpenGL, GLUT
+ * Factual, code-verified, interview-safe engineering profile.
  */
 
 export const personalInfo = {
   name: "T.M. Wasif Jamee",
   shortName: "Wasif",
-  title: "Software Engineer Intern • Full Stack Developer • AI Engineer",
+  title: "Software Engineering Intern | Full Stack Developer | AI Enthusiast",
   institution: "American International University-Bangladesh (AIUB)",
   degree: "B.Sc. in Computer Science & Engineering",
-  location: "Dhaka, Bangladesh (Relocation & Remote Ready)",
+  location: "Dhaka, Bangladesh",
   email: "wasifjamee05@gmail.com",
   github: "https://github.com/Wasif109160",
   githubUsername: "Wasif109160",
   linkedin: "https://www.linkedin.com/in/t-m-wasif-jamee-687094297/",
-  availability: "Open to Software Engineering Internships & Remote Opportunities",
-  targetRoles: [
-    "Software Engineer Intern",
-    "MERN Stack Developer",
-    "AI + Full Stack Engineering",
-    "AIUB CSE Student"
+  availability: "Open to Software Engineering & Full Stack Opportunities",
+  focusAreas: [
+    "React / Next.js",
+    "TypeScript",
+    "Backend Development",
+    "AI Integration",
+    "System Design"
   ],
-  bio: "Computer Science & Engineering student at AIUB building robust web platforms, AI-assisted crisis coordination systems, and interactive developer tools. Experienced in TypeScript, Next.js 16, Node.js, and algorithmic problem solving in C++.",
+  bio: "Computer Science & Engineering undergraduate at AIUB interested in Software Engineering, Full Stack Development, and AI Systems. Experienced in building responsive web applications with Next.js and TypeScript, designing relational and document database schemas, integrating AI SDKs, and algorithmic problem solving in C++.",
   avatar: "/images/profile.jpeg",
   resumeUrl: "/Wasif_Jamee_Resume.pdf"
 };
@@ -48,46 +44,57 @@ export const githubTelemetry = {
 };
 
 export const metrics = [
-  { label: "Public Repositories", value: 16, suffix: "+", desc: "Public codebases on GitHub (@Wasif109160)" },
-  { label: "Flagship Architectures", value: 4, suffix: "", desc: "ReliefAI, BazarDor, FitLog & DevStack" },
-  { label: "Automated Test Suites", value: 3, suffix: " suites", desc: "Auth RBAC & Fail-Closed Security Tests" },
-  { label: "Undergraduate Degree", value: 2026, suffix: "", desc: "B.Sc. in CSE @ AIUB (In Progress)" }
+  { label: "Public Repositories", value: 16, suffix: "+", desc: "Active codebases on GitHub (@Wasif109160)" },
+  { label: "Featured Projects", value: 4, suffix: "", desc: "ReliefAI, BazarDor, FitLog & DevStack" },
+  { label: "Automated Test Suites", value: 3, suffix: "", desc: "Security RBAC & Fail-Closed Test Suites" },
+  { label: "Academic Standing", value: 2026, suffix: "", desc: "CSE Undergraduate @ AIUB" }
 ];
 
 export const projects = [
   {
     id: "reliefai",
     title: "ReliefAI",
-    tagline: "AI-Assisted Multi-Agency Disaster Response & Crisis Coordination Platform",
+    tagline: "AI-Assisted Disaster Management & Crisis Coordination Platform",
     category: "ai",
-    categoryLabel: "AI & Crisis Platform",
+    categoryLabel: "AI & Web Platform",
     featured: true,
-    status: "Production Ready",
+    status: "Completed",
     techStack: [
       "Next.js 16.4",
       "TypeScript",
-      "@google/generative-ai (Gemini)",
+      "Google Gemini SDK",
       "MongoDB (Mongoose)",
       "Jose (JWT RBAC)",
       "Zod",
-      "TailwindCSS v4",
-      "Recharts"
+      "TailwindCSS v4"
     ],
-    metrics: { latency: "Next.js App Router", scale: "Multi-Role RBAC" },
-    summary: "A disaster management platform engineered to coordinate humanitarian operations during natural crises with Gemini AI triage, shelter routing, and role-based access for Citizens, Volunteers, NGOs, and Government authorities.",
+    summary: "A disaster management platform designed to help humanitarian teams coordinate relief operations with automated Gemini AI incident triage, shelter locator routing, and role-based access control.",
     repoUrl: "https://github.com/Wasif109160/ReliefAI",
     stars: 0,
     forks: 0,
     lastPushed: "October 2026",
     
-    // 100% Defensible Engineering Case Study
     caseStudy: {
-      problemStatement: "During catastrophic emergencies like floods or cyclones, phone lines get overwhelmed. Citizens struggle to communicate structured incident details, and relief organizations lack unified triage to prioritize critical rescues.",
-      solution: "Engineered ReliefAI: a centralized platform that captures geo-tagged SOS reports, processes unstructured emergency descriptions through Google Gemini AI for severity classification, and routes resources via authenticated dashboards.",
-      techArchitecture: "Next.js 16.4 App Router architecture with server-side route handlers, Google Generative AI SDK (@google/generative-ai), Mongoose models with connection pooling, and client-side visualization with Recharts and Framer Motion.",
-      myContribution: "Architected the backend route handlers, integrated Google Gemini SDK for automated incident severity assessment, implemented Jose JWT token authentication with role-based middleware, and wrote automated security verification tests.",
-      challengesSolved: "Implemented a fail-closed authentication policy with custom security tests (`tests/security/auth-rbac.test.ts`), ensuring unauthorized users cannot access government or NGO triage portals if auth headers are malformed.",
-      futureImprovements: "Implementing Service Worker background sync for queuing citizen SOS distress signals when connectivity drops temporarily."
+      problem: "During natural crises, communication channels receive overwhelming volumes of unstructured distress messages, making it difficult for responders to quickly identify urgency levels and dispatch relief effectively.",
+      solution: "Built a centralized web platform where citizens submit geo-tagged incident reports that are automatically evaluated by Google Gemini AI for urgency classification and surfaced on authenticated responder portals.",
+      technologiesUsed: [
+        "Next.js 16.4 (App Router & Route Handlers)",
+        "TypeScript (Strict Typing)",
+        "@google/generative-ai (Gemini SDK)",
+        "MongoDB with Mongoose ODM",
+        "Jose (JWT signing and verification)",
+        "Zod (Runtime schema validation)",
+        "TailwindCSS v4"
+      ],
+      keyFeatures: [
+        "Geo-tagged citizen SOS report submission with coordinates",
+        "Google Gemini AI triage to analyze text and estimate incident severity",
+        "Role-Based Access Control (RBAC) for Citizens, Volunteers, NGOs, and Government officials",
+        "Shelter locator and resource allocation tracking",
+        "Automated security test suites verifying fail-closed token authorization"
+      ],
+      engineeringDecisions: "Adopted Next.js 16 App Router route handlers with Jose middleware to enforce strict server-side role validation, preventing unauthorized access to administrative triage portals. Implemented Mongoose connection pooling for reliable MongoDB communication.",
+      futureImprovements: "Implement background sync with service workers to queue emergency reports when network connections are unstable."
     }
   },
   {
@@ -95,65 +102,86 @@ export const projects = [
     title: "BazarDor",
     tagline: "Market Commodity Price Tracker & Regional Intelligence Platform",
     category: "web",
-    categoryLabel: "Web & Distributed Systems",
+    categoryLabel: "Full Stack Web",
     featured: true,
-    status: "Active System",
+    status: "Completed",
     techStack: [
       "Next.js 16.4",
       "TypeScript",
       "Better-Auth",
       "Better-SQLite3",
       "TailwindCSS v4",
-      "React Hot Toast",
-      "Lucide React"
+      "React Hot Toast"
     ],
-    metrics: { latency: "Embedded SQLite Reads", scale: "Zero Layout Shift" },
-    summary: "A market surveillance web application tracking essential grocery and commodity fluctuations across regional markets with fast embedded SQLite storage and modern Better-Auth authentication.",
+    summary: "A market commodity surveillance platform that tracks essential grocery and item prices across local markets with fast embedded SQLite storage and user authentication.",
     repoUrl: "https://github.com/Wasif109160/B14-A7-Bazar-Dor-main",
     stars: 0,
     forks: 0,
     lastPushed: "October 2026",
 
     caseStudy: {
-      problemStatement: "Commodity pricing in local markets changes frequently without centralized public tracking, making it difficult for consumers to recognize fair prices and track inflationary spikes.",
-      solution: "Built BazarDor as an accessible market price tracker with instant search, historical price delta views, and user-authenticated market report contributions.",
-      techArchitecture: "Next.js 16.4 Server Components querying an embedded SQLite database (`better-sqlite3`), paired with `better-auth` session management and TailwindCSS v4 styling.",
-      myContribution: "Configured the Better-Auth authentication pipeline, designed the SQLite database schema (`auth.db`), built responsive commodity listing components, and integrated toast feedback.",
-      challengesSolved: "Managed database connection lifecycles in Next.js development and production environments to prevent file lock contention on SQLite during hot module reloads.",
-      futureImprovements: "Adding price alerts via email notifications when user-tracked staple goods drop or spike past specified thresholds."
+      problem: "Consumers and local vendors frequently lack a transparent, centralized record of daily grocery and commodity price variations across regional markets.",
+      solution: "Developed an accessible web application providing instant commodity search, historical price tracking, and community price submissions with user authentication.",
+      technologiesUsed: [
+        "Next.js 16.4 (Server Components)",
+        "TypeScript",
+        "Better-Auth (Session Authentication)",
+        "Better-SQLite3 (Embedded Database)",
+        "TailwindCSS v4",
+        "React Hot Toast"
+      ],
+      keyFeatures: [
+        "Real-time commodity search and category-based filtering",
+        "Historical price tracking to identify pricing trends",
+        "User authentication and profile session management via Better-Auth",
+        "Embedded SQLite database storage with zero external database dependencies",
+        "Mobile-first responsive interface with toast feedback"
+      ],
+      engineeringDecisions: "Utilized Next.js Server Components with Better-SQLite3 for lightweight in-process database queries, avoiding database network latency while keeping hosting requirements minimal.",
+      futureImprovements: "Add email alert notifications for tracked items when prices fluctuate beyond user-defined thresholds."
     }
   },
   {
     id: "fitlog",
     title: "FitLog",
-    tagline: "Workout Volume & Progressive Overload Tracking Application",
+    tagline: "Local-First Workout Volume & Exercise Progression Tracker",
     category: "web",
-    categoryLabel: "Web & Distributed Systems",
+    categoryLabel: "Full Stack Web",
     featured: true,
-    status: "Production Ready",
+    status: "Completed",
     techStack: [
       "Next.js 16.3",
       "React 19",
       "Babel React Compiler",
       "TailwindCSS v4",
       "LocalStorage",
-      "React Icons",
       "React-Toastify"
     ],
-    metrics: { latency: "Local-First Instant", scale: "Dynamic Exercise Builder" },
-    summary: "A streamlined, local-first workout tracker built with React 19 and Next.js 16 for logging exercises, tracking set progression, and visualizing workout consistency.",
+    summary: "A client-side workout tracking application designed for logging sets, tracking exercise volume, and monitoring consistency with instant browser persistence.",
     repoUrl: "https://github.com/Wasif109160/Fitlog",
     stars: 0,
     forks: 0,
     lastPushed: "September 2026",
 
     caseStudy: {
-      problemStatement: "Many fitness apps require paid subscriptions, invasive tracking, and forced cloud logins just to record basic gym workout sets and reps.",
-      solution: "Created FitLog as an intuitive, client-side, local-first application where workout logs are saved instantly in the browser without account friction.",
-      techArchitecture: "Modular React 19 architecture with experimental React Compiler optimizations, TailwindCSS v4 design tokens, and LocalStorage state persistence.",
-      myContribution: "Built the dynamic exercise log builder (sets, weight, reps), designed the responsive mobile interface, and implemented React-Toastify notifications on completed sets.",
-      challengesSolved: "Structured robust JSON serialization and parsing routines to safeguard against corrupted LocalStorage schemas across app updates.",
-      futureImprovements: "Adding JSON export and import capabilities so athletes can back up and transfer their workout history across devices."
+      problem: "Many commercial fitness applications require paid subscriptions and constant cloud connectivity just to log basic gym exercises and set volumes.",
+      solution: "Built a fast, local-first workout tracker where workout data is saved directly in browser LocalStorage without mandatory account creation.",
+      technologiesUsed: [
+        "Next.js 16.3",
+        "React 19",
+        "Babel React Compiler",
+        "TailwindCSS v4",
+        "Browser LocalStorage API",
+        "React-Toastify"
+      ],
+      keyFeatures: [
+        "Dynamic exercise logger for recording sets, repetitions, tempo, and weight",
+        "Local-first state storage for instantaneous responsiveness and offline operation",
+        "Toast notification feedback upon completing workout entries",
+        "Responsive interface optimized for quick mobile input at the gym"
+      ],
+      engineeringDecisions: "Structured data with versioned JSON serialization in LocalStorage to maintain workout history across browser sessions without requiring server infrastructure.",
+      futureImprovements: "Add backup export and import features so users can save their history as a JSON file."
     }
   },
   {
@@ -161,37 +189,48 @@ export const projects = [
     title: "DevStack",
     tagline: "Interactive Developer Ecosystem & Software Toolchain Explorer",
     category: "web",
-    categoryLabel: "Web & Distributed Systems",
+    categoryLabel: "Full Stack Web",
     featured: true,
-    status: "Production Ready",
+    status: "Completed",
     techStack: [
       "React",
       "Vite",
       "TailwindCSS v4",
       "DaisyUI v5",
-      "React-Toastify",
-      "Figma & Penpot"
+      "Figma & Penpot",
+      "React-Toastify"
     ],
-    metrics: { latency: "Vite HMR Sub-second", scale: "Toolchain Matrix" },
-    summary: "An interactive developer ecosystem explorer that contrasts modern frontend, backend, and database toolchains with UI wireframes designed in Penpot and Figma.",
+    summary: "An interactive developer toolchain visualizer enabling software developers to explore combinations of frontend, backend, and database technologies alongside UI design wireframes.",
     repoUrl: "https://github.com/Wasif109160/PH-14-AS-5",
     stars: 0,
     forks: 0,
     lastPushed: "September 2026",
 
     caseStudy: {
-      problemStatement: "Early-career developers and student teams often struggle to understand how various frontend frameworks, UI component libraries, and backend tools combine into a functional stack.",
-      solution: "Engineered DevStack: an interactive explorer that visualizes developer tool combinations with live component previews and design references.",
-      techArchitecture: "Vite-powered React client utilizing TailwindCSS v4 and DaisyUI v5 utility components for rapid UI composition.",
-      myContribution: "Created the interactive stack selection controls, structured the design wireframes in Figma and Penpot (`DevStack.fig`, `DevStack.penpot`), and built the responsive interface.",
-      challengesSolved: "Configured Vite 8 with TailwindCSS 4 and DaisyUI 5, ensuring correct post-processing without build-time utility collisions.",
-      futureImprovements: "Adding interactive links to official documentation and recommended starter repositories for each selected stack."
+      problem: "Navigating modern software development options can be overwhelming for student developers choosing frameworks and libraries for new projects.",
+      solution: "Created an interactive explorer that visualizes popular developer stacks, provides component examples, and includes prototype design wireframes.",
+      technologiesUsed: [
+        "React",
+        "Vite",
+        "TailwindCSS v4",
+        "DaisyUI v5",
+        "Figma & Penpot Design Systems",
+        "React-Toastify"
+      ],
+      keyFeatures: [
+        "Interactive selection filters for frontend, backend, and database tools",
+        "Design wireframe reference files modeled in Figma and Penpot (`DevStack.fig`, `DevStack.penpot`)",
+        "Rapid component rendering powered by Vite bundling",
+        "Accessible responsive layout using DaisyUI components"
+      ],
+      engineeringDecisions: "Built with Vite and React for fast local development and lightweight client-side state handling without unnecessary server dependencies.",
+      futureImprovements: "Add links to official getting-started documentation and community templates for each stack combination."
     }
   },
   {
     id: "storyscene",
     title: "Story-Scene OpenGL Simulation",
-    tagline: "Hardware-Accelerated 3D/2D Graphics Animation in C++",
+    tagline: "Procedural 3D/2D Graphics Animation in C++ and OpenGL",
     category: "graphics",
     categoryLabel: "Graphics & Systems",
     featured: false,
@@ -200,60 +239,69 @@ export const projects = [
       "C++",
       "OpenGL",
       "GLUT",
-      "Matrix Math",
+      "Linear Algebra",
       "Computer Graphics"
     ],
-    metrics: { latency: "Hardware 60 FPS", scale: "7-Scene Pipeline" },
-    summary: "A 7-scene animated graphics simulation written in modern C++ directly interfacing with OpenGL and GLUT, implementing custom matrix transformations and lighting algorithms.",
+    summary: "A 7-scene procedural graphics simulation written in C++ with OpenGL and GLUT, implementing matrix transformations, lighting primitives, and camera projection mathematics.",
     repoUrl: "https://github.com/Wasif109160/Story-Scene",
     stars: 0,
     forks: 0,
     lastPushed: "March 2026",
 
     caseStudy: {
-      problemStatement: "Understanding graphics hardware and foundational computer science requires moving beyond high-level DOM abstractions to understand vertex transformations, coordinate spaces, and frame rendering loops.",
-      solution: "Developed Story-Scene: a procedural 7-scene narrative simulation utilizing C++ and OpenGL primitives with real-time coordinate transformations.",
-      techArchitecture: "C++ application leveraging standard OpenGL and GLUT libraries with double-buffered rendering and timer callback animation loops.",
-      myContribution: "Engineered the hierarchical transformation matrices (translation, rotation, scaling) across all 7 scenes, configured lighting primitives, and implemented camera projection math.",
-      challengesSolved: "Maintained consistent animation choreography across scenes by synchronizing coordinate updates with delta-time callbacks in the main GLUT loop.",
-      futureImprovements: "Porting the scene geometry into modern shader-based OpenGL (GLSL) with custom vertex and fragment shaders."
+      problem: "Understanding computer graphics and hardware rendering pipelines requires working directly with coordinate spaces, transformation matrices, and render loops rather than high-level web APIs.",
+      solution: "Developed a 7-scene animated graphics simulation written in modern C++ directly interfacing with OpenGL and GLUT with double-buffered rendering.",
+      technologiesUsed: [
+        "C++",
+        "OpenGL Core Primitives",
+        "GLUT Library",
+        "Linear Algebra & Matrix Math"
+      ],
+      keyFeatures: [
+        "7 distinct choreographed procedural animation scenes",
+        "Hierarchical matrix transformations (translation, rotation, scaling)",
+        "Ambient and diffuse lighting primitive calculations",
+        "Timer callback-driven rendering loop maintaining consistent animation timing"
+      ],
+      engineeringDecisions: "Utilized double buffering and GLUT timer callbacks to coordinate smooth scene transitions and maintain consistent frame execution across all 7 scenes.",
+      futureImprovements: "Port the geometry pipeline to modern shader-based OpenGL (GLSL) with programmable vertex and fragment shaders."
     }
   }
 ];
 
 export const skillCategories = [
   {
-    name: "Core Programming Languages",
+    name: "Programming Languages",
     icon: "code",
     skills: [
-      { name: "C++", level: 85, desc: "Algorithmic Problem Solving, OOP, Pointers, Memory Management" },
+      { name: "C++", level: 85, desc: "Data Structures, Algorithms, OOP, Memory & Pointer Management" },
       { name: "TypeScript", level: 90, desc: "Strict Types, Generics, Interfaces, Next.js Server Components" },
-      { name: "JavaScript (ES6+)", level: 92, desc: "Async/Await, Event Loop, DOM, Functional Methods" },
+      { name: "JavaScript (ES6+)", level: 92, desc: "Async/Await, Promises, Event Loop, DOM Manipulation" },
       { name: "Python", level: 82, desc: "Scripting, Automation, AI Integrations, Data Processing" },
-      { name: "Java", level: 80, desc: "OOP Fundamentals, Class Hierarchies, Enterprise Lab Projects" },
-      { name: "C#", level: 78, desc: ".NET Fundamentals, Software Lab Engineering" }
+      { name: "Java", level: 80, desc: "OOP Fundamentals, Class Hierarchies, Academic Projects" },
+      { name: "C#", level: 78, desc: ".NET Fundamentals, Desktop Application Development" }
     ]
   },
   {
-    name: "Frontend & UI Engineering",
+    name: "Frontend & UI Development",
     icon: "layout",
     skills: [
-      { name: "Next.js 16 (App Router)", level: 90, desc: "Server Components, Route Handlers, Metadata, Layouts" },
-      { name: "React 19", level: 92, desc: "Hooks, Custom Reducers, Context, Virtual DOM" },
-      { name: "Tailwind CSS v4", level: 90, desc: "Utility Tokens, Responsive Breakpoints, Dark Mode" },
-      { name: "Modern HTML5 & Vanilla CSS", level: 94, desc: "Semantic Markup, CSS Grid, Flexbox, Custom Properties" },
-      { name: "Vite", level: 88, desc: "Fast Bundling, ESM Modules, Dev Server Configuration" }
+      { name: "Next.js 16 (App Router)", level: 90, desc: "Server Components, Route Handlers, Layouts, SSR" },
+      { name: "React 19", level: 92, desc: "Hooks, Context, Reducers, Component Architecture" },
+      { name: "Tailwind CSS v4", level: 90, desc: "Utility Tokens, Responsive Layouts, Dark Mode" },
+      { name: "Modern HTML5 & CSS3", level: 94, desc: "Semantic Elements, CSS Grid, Flexbox, Custom Properties" },
+      { name: "Vite", level: 88, desc: "Fast Bundling, ESM Modules, Local Development Server" }
     ]
   },
   {
     name: "Backend & AI Integrations",
     icon: "server",
     skills: [
-      { name: "Node.js", level: 88, desc: "Event-driven runtime, NPM Ecosystem, Scripting" },
+      { name: "Node.js", level: 88, desc: "Runtime Environment, NPM Packages, Backend Scripting" },
       { name: "Next.js API Route Handlers", level: 90, desc: "RESTful Endpoints, Request Validation, Error Handling" },
       { name: "Google Generative AI SDK", level: 85, desc: "Gemini API Integration, Prompt Structuring, Severity Triage" },
-      { name: "Jose (JWT) & Authentication", level: 86, desc: "Token Signing, Verification, Role-Based Access Middleware" },
-      { name: "Zod", level: 88, desc: "Runtime Type Validation, Form & API Payload Parsing" }
+      { name: "Jose (JWT Authentication)", level: 86, desc: "Token Signing, Verification, Role-Based Access Middleware" },
+      { name: "Zod", level: 88, desc: "Runtime Schema Validation, API Payload Parsing" }
     ]
   },
   {
@@ -261,19 +309,19 @@ export const skillCategories = [
     icon: "database",
     skills: [
       { name: "MongoDB & Mongoose", level: 86, desc: "Document Schemas, Indexes, Aggregations, Connection Pooling" },
-      { name: "SQLite (Better-SQLite3)", level: 84, desc: "Embedded Database, ACID Queries, Next.js Server Integration" },
-      { name: "MySQL", level: 80, desc: "Relational Schemas, Primary/Foreign Keys, Normalization" }
+      { name: "SQLite (Better-SQLite3)", level: 84, desc: "Embedded Database, ACID Queries, In-Process Storage" },
+      { name: "MySQL", level: 80, desc: "Relational Tables, Primary & Foreign Keys, Normalization" }
     ]
   },
   {
     name: "Tools, Testing & Design",
     icon: "terminal",
     skills: [
-      { name: "Git & GitHub", level: 90, desc: "Branching, Pull Requests, Semantic Commits, Repository Hygiene" },
-      { name: "Node Test Runner (tsx --test)", level: 82, desc: "Automated Auth & RBAC Security Verification Tests" },
+      { name: "Git & GitHub", level: 90, desc: "Version Control, Pull Requests, Commit Hygiene" },
+      { name: "Node Test Runner (tsx --test)", level: 82, desc: "Automated Auth & Security Verification Tests" },
       { name: "Postman", level: 88, desc: "API Endpoint Testing, Header & Payload Verification" },
-      { name: "VS Code & Windows / Linux", level: 90, desc: "Development Toolchains, Shell Scripting, Debugging" },
-      { name: "Figma & Penpot", level: 82, desc: "Wireframing, Component Hierarchy, UI Prototyping" }
+      { name: "VS Code & Development Tools", level: 90, desc: "Debugging, Extensions, Linting, Shell Scripting" },
+      { name: "Figma & Penpot", level: 82, desc: "Wireframing, UI Layout Prototyping, Design Handoff" }
     ]
   }
 ];
@@ -281,23 +329,23 @@ export const skillCategories = [
 export const education = {
   institution: "American International University-Bangladesh (AIUB)",
   degree: "Bachelor of Science in Computer Science & Engineering (CSE)",
-  timeline: "Undergraduate (In Progress)",
+  timeline: "Undergraduate Student (In Progress)",
   location: "Dhaka, Bangladesh",
   highlights: [
-    "Rigorous grounding in Data Structures, Algorithm Complexity, Discrete Mathematics, and Computer Architecture.",
-    "Specialized coursework in Artificial Intelligence, Database Management Systems, and Object-Oriented Software Engineering.",
-    "Active participant in university software engineering labs and team project architectures."
+    "Core curriculum in Data Structures, Algorithms, Discrete Mathematics, and Computer Architecture.",
+    "Specialized coursework in Artificial Intelligence, Database Management Systems, and Software Engineering.",
+    "Practical project experience across web application development, security testing, and computer graphics."
   ]
 };
 
 export const terminalCommands = {
-  help: "Available commands:\n  whoami      - Executive summary & candidate profile\n  skills      - Technical proficiency matrix\n  projects    - Flagship software engineering projects\n  github      - Real GitHub telemetry (@Wasif109160)\n  resume      - Resume details & download\n  education   - Academic background & university\n  contact     - Reach out for internship & job offers\n  status      - Current recruitment availability\n  clear       - Clear terminal output",
-  whoami: "T.M. Wasif Jamee\nTarget: Software Engineer Intern | Full Stack Developer | AI Engineer\nUniversity: American International University-Bangladesh (AIUB)\nLocation: Dhaka, Bangladesh (Open to Remote & Global Relocation)\nFocus: Production Next.js 16 platforms, Gemini AI integrations, and algorithmic rigor in C++ and TypeScript.",
-  skills: "Verified Technical Proficiencies:\n• Languages: C++, TypeScript, JavaScript (ES6+), Python, Java, C#\n• Web & UI: Next.js 16 (App Router), React 19, TailwindCSS v4, Vanilla CSS, Vite\n• Backend & AI: Next.js API Routes, Google Generative AI (Gemini), Jose (JWT), Zod\n• Databases: MongoDB (Mongoose), SQLite (Better-SQLite3), MySQL\n• Tools & Tests: Git, GitHub, tsx test runner, Postman, Figma, Penpot",
-  projects: "Flagship Engineering Projects:\n1. ReliefAI    - AI Disaster Response Platform [Next.js 16.4, Gemini AI, Mongoose, Jose JWT]\n2. BazarDor    - Market Price Tracker [Next.js 16.4, Better-Auth, Better-SQLite3]\n3. FitLog      - Workout Volume Tracker [Next.js 16.3, React 19, React Compiler]\n4. DevStack    - Developer Toolchain Explorer [React, Vite, TailwindCSS 4, DaisyUI 5]\n5. StoryScene  - Procedural Graphics Simulation [C++, OpenGL, GLUT]",
-  github: "GitHub Telemetry (@Wasif109160):\n• Public Repositories: 16\n• Verified Languages: TypeScript, JavaScript, C++, C#, Java\n• Profile URL: https://github.com/Wasif109160",
-  resume: "Resume & Credentials:\n• File: /Wasif_Jamee_Resume.pdf\n• Format: Production-ready PDF (209 KB)\n• Status: Available for download and browser preview.",
-  education: "American International University-Bangladesh (AIUB)\nDegree: B.Sc. in Computer Science & Engineering (CSE)\nCoursework: Data Structures, Algorithms, AI, DBMS, Software Engineering Labs.",
-  contact: "Direct Communication Channels:\n• Email: wasifjamee05@gmail.com\n• LinkedIn: https://www.linkedin.com/in/t-m-wasif-jamee-687094297/\n• GitHub: https://github.com/Wasif109160\n• Availability: Open to Software Engineering Internships (Summer/Fall 2026/2027)",
-  status: "STATUS: ACTIVE CANDIDATE 🟢\nTarget: Software Engineer Intern / Junior Full-Stack Developer\nPreferences: Remote or Onsite (Worldwide relocation ready)\nNotice Period: Immediate / Flexible"
+  help: "Available commands:\n  whoami      - Summary & candidate profile\n  skills      - Technical skills matrix\n  projects    - Featured software engineering projects\n  github      - GitHub profile telemetry (@Wasif109160)\n  resume      - Resume details & download\n  education   - Academic background & university\n  contact     - Communication channels\n  status      - Current internship availability\n  clear       - Clear terminal output",
+  whoami: "T.M. Wasif Jamee\nRole: Software Engineering Intern | Full Stack Developer | AI Enthusiast\nEducation: American International University-Bangladesh (AIUB) — B.Sc. in CSE\nLocation: Dhaka, Bangladesh\nInterests: Software Engineering, Full Stack Development, and AI Systems.",
+  skills: "Technical Proficiencies:\n• Languages: C++, TypeScript, JavaScript (ES6+), Python, Java, C#\n• Frontend: React 19, Next.js 16 (App Router), TailwindCSS v4, HTML5/CSS3, Vite\n• Backend & AI: Next.js API Routes, Node.js, Google Gemini SDK, Jose (JWT), Zod\n• Databases: MongoDB (Mongoose), SQLite (Better-SQLite3), MySQL\n• Tools & Tests: Git, GitHub, tsx test runner, Postman, Figma, Penpot",
+  projects: "Featured Software Engineering Projects:\n1. ReliefAI    - AI Disaster Management Platform [Next.js 16.4, Gemini SDK, MongoDB, Jose JWT]\n2. BazarDor    - Market Commodity Price Tracker [Next.js 16.4, Better-Auth, Better-SQLite3]\n3. FitLog      - Local-First Workout Tracker [Next.js 16.3, React 19, React Compiler]\n4. DevStack    - Developer Toolchain Explorer [React, Vite, TailwindCSS 4, DaisyUI 5]\n5. StoryScene  - Procedural Graphics Simulation [C++, OpenGL, GLUT]",
+  github: "GitHub Telemetry (@Wasif109160):\n• Public Repositories: 16\n• Top Languages: TypeScript, JavaScript, C++, C#, Java\n• Profile: https://github.com/Wasif109160",
+  resume: "Resume & Credentials:\n• File: /Wasif_Jamee_Resume.pdf\n• Format: PDF (209 KB)\n• Action: Available for download and browser viewing in the Resume section.",
+  education: "American International University-Bangladesh (AIUB)\nDegree: B.Sc. in Computer Science & Engineering (CSE)\nCoursework: Data Structures, Algorithms, AI, DBMS, Software Engineering.",
+  contact: "Communication Channels:\n• Email: wasifjamee05@gmail.com\n• LinkedIn: https://www.linkedin.com/in/t-m-wasif-jamee-687094297/\n• GitHub: https://github.com/Wasif109160",
+  status: "STATUS: AVAILABLE 🟢\nTarget: Software Engineering Intern / Junior Full Stack Developer\nFocus: React, Next.js, TypeScript, Backend Development, AI Integration"
 };
