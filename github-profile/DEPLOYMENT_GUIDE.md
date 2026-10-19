@@ -86,7 +86,7 @@ Update your GitHub account profile settings at `https://github.com/settings/prof
 | Field | Old Value | New Recruiter-Optimized Value |
 | :--- | :--- | :--- |
 | **Name** | Wasif Jamee | **T.M. Wasif Jamee** |
-| **Bio** | `i am wasif` | **AI Engineer & Full-Stack Developer \| AIUB CSE \| Building ReliefAI & scalable distributed web systems \| Open for SDE & AI Internships** |
+| **Bio** | `i am wasif` | **Software Engineering Intern \| Full Stack Developer \| AI Enthusiast \| AIUB CSE \| Building ReliefAI & modern web systems** |
 | **Pronouns** | *(empty)* | He/Him |
 | **Company** | *(empty)* | AIUB CSE / Open Source |
 | **Location** | Dhaka | **Dhaka, Bangladesh (Open to Remote)** |
