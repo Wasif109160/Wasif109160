@@ -272,23 +272,23 @@ function initArchitectureDiagram() {
   const nodeDetails = {
     sos: {
       title: "Citizen SOS Ingestion Layer",
-      desc: "Lightweight Next.js edge route handlers capture geo-tagged distress signals, sanitize telemetry payloads, and perform instantaneous cryptographic rate limiting to mitigate denial-of-service spam during crisis situations."
+      desc: "Next.js 16 App Router server route handlers capture geo-tagged distress signals with coordinates and emergency descriptions, validated at runtime using strict Zod schemas."
     },
     ai: {
-      title: "AI Triage & Natural Language Severity Engine",
-      desc: "Incoming unstructured emergency messages pass through an automated classification pipeline that extracts casualty counts, infrastructure collapse indicators, and urgency metrics to assign a deterministic Priority Score (P1 to P4)."
+      title: "Google Gemini AI Triage Engine",
+      desc: "Unstructured distress text is passed to the @google/generative-ai SDK using prompt heuristics to extract casualty counts, urgency level, and disaster category for priority sorting."
     },
-    geo: {
-      title: "Geospatial Shelter & Proximity Matching",
-      desc: "Calculates real-time haversine distance vectors between victims and verified functional shelters, factoring in live shelter capacity telemetry and flooding road-block reports."
+    db: {
+      title: "MongoDB Atlas Document Persistence",
+      desc: "Stores verified incident tickets, user accounts, and shelter locations using Mongoose schemas with connection pooling and geospatial coordinate models."
     },
-    dispatch: {
-      title: "Socket.IO Pub/Sub Telemetry Broadcast",
-      desc: "High-frequency WebSocket event loop pushing sub-second alerts to active rescue teams and NGO field units without polling overhead or stale state locks."
+    rbac: {
+      title: "Jose JWT Authentication & Role Middleware",
+      desc: "Cryptographically signed JWT tokens enforce role boundaries across Citizens, Volunteers, NGOs, and Government authorities, verified by automated fail-closed security tests."
     },
     command: {
-      title: "Multi-Agency RBAC Command Center",
-      desc: "Separate authenticated operational portals for Citizens, Field Volunteers, Relief NGOs, and National Crisis Coordinators with granular audit logs and state persistence in MongoDB."
+      title: "Multi-Role Command Portals",
+      desc: "Role-specific Next.js dashboards displaying filtered emergency tickets, real-time crisis status, and resource distribution metrics."
     }
   };
 

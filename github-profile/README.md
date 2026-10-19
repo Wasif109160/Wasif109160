@@ -44,12 +44,12 @@
 
 ## 📌 Executive Summary
 
-I am a **Software Engineering Student at American International University-Bangladesh (AIUB)** and a **Full-Stack AI Developer** focused on building resilient, scalable distributed software. My work bridges rigorous algorithmic fundamentals (C++, Python) with modern full-stack web engineering (Next.js 16, TypeScript, Node.js, Socket.IO, MongoDB).
+I am a **Software Engineering Student at American International University-Bangladesh (AIUB)** and a **Full-Stack Developer & AI Integrator** focused on building resilient, scalable web software. My work bridges algorithmic fundamentals (C++, Python) with modern full-stack engineering (Next.js 16, TypeScript, Node.js, Gemini AI SDK, MongoDB, SQLite).
 
-- 🧠 **AI & Real-Time Engineering**: Designing autonomous crisis management architectures, streaming APIs, and intelligent data pipelines.
-- 🏗️ **Systems & Web Architecture**: Applying clean MVC/modular architectures, strict TypeScript typing, deterministic state management, and production-tested RESTful services.
-- 🎯 **Target Roles**: Software Engineering Intern (Frontend, Backend, or Full Stack), AI Platform Intern, Open Source Fellow.
-- 🌐 **Target Ecosystems**: Global Tech (Google, Microsoft, Amazon, NVIDIA, Meta), high-velocity European & US startups, and open-source foundations.
+- 🧠 **AI & Full-Stack Systems**: Designing crisis management architectures, structured Gemini AI triage pipelines, and role-based operational portals.
+- 🏗️ **Systems & Web Architecture**: Applying clean modular architectures, strict TypeScript typing, deterministic state management, and production-tested RESTful services.
+- 🎯 **Target Roles**: Software Engineering Intern (Frontend, Backend, or Full Stack), AI Engineering Intern.
+- 🌐 **Target Ecosystems**: Global Tech, high-velocity startups, and open-source foundations.
 
 ---
 
@@ -59,11 +59,11 @@ I am a **Software Engineering Student at American International University-Bangl
 ┌────────────────────────────────────────────────────────────────────────────────┐
 │ SYSTEM LOG :: CURRENT RUNTIME STATE                                           │
 ├────────────────────────────────────────────────────────────────────────────────┤
-│ [01] DEVELOPING  ReliefAI (Multi-Agency Real-Time Disaster Dispatch Engine)    │
-│ [02] REFINING    BazarDor (Distributed Price Aggregation & Real-Time Metrics)  │
-│ [03] SCALING     System Design, High-Throughput Microservices, Redis Caching   │
-│ [04] MASTERING   Distributed LLM Orchestration, LangChain, Vector Embeddings   │
-│ [05] COMPETING   Algorithmic Problem Solving (LeetCode, Codeforces)            │
+│ [01] DEVELOPING  ReliefAI (Multi-Agency Crisis Coordination & Gemini AI Triage)│
+│ [02] REFINING    BazarDor (Regional Commodity Price Tracker & SQLite Storage)  │
+│ [03] SCALING     System Design, Database Modeling, RESTful API Route Handlers  │
+│ [04] MASTERING   Prompt Engineering, Structured Extraction, Vector Embeddings  │
+│ [05] COMPETING   Algorithmic Problem Solving in C++ (LeetCode, Codeforces)     │
 └────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -93,14 +93,14 @@ I am a **Software Engineering Student at American International University-Bangl
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
 </p>
 
-### Backend Architecture & Databases
+### Backend, APIs & Data Stores
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js" />
-  <img src="https://img.shields.io/badge/Socket.IO-010101?style=for-the-badge&logo=socket.io&logoColor=white" alt="Socket.io" />
+  <img src="https://img.shields.io/badge/Google_Gemini_AI-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Gemini AI" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white" alt="JWT" />
+  <img src="https://img.shields.io/badge/JWT_Auth-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white" alt="JWT" />
 </p>
 
 ### Tooling, DevOps & Workflows
@@ -127,16 +127,16 @@ I am a **Software Engineering Student at American International University-Bangl
         <b>Multi-Agency AI Disaster Response &amp; Crisis Coordination Platform</b>
       </p>
       <p>
-        A mission-critical emergency orchestration platform engineered to streamline real-time humanitarian operations during natural catastrophes. Integrates automated AI triage, real-time geolocation telemetry, and role-based authority access.
+        A mission-critical emergency orchestration platform engineered to streamline real-time humanitarian operations during natural catastrophes. Integrates automated Google Gemini AI triage, geospatial shelter routing, and role-based access control.
       </p>
       <ul>
-        <li><b>AI Emergency Triage:</b> Automated incident classification &amp; priority allocation.</li>
-        <li><b>SOS &amp; Shelter Finder:</b> Geospatial routing to functional disaster shelters.</li>
-        <li><b>Real-Time Telemetry:</b> Socket.IO bi-directional streaming for live emergency dispatch.</li>
-        <li><b>Multi-Tier Access Control:</b> Distinct portals for Citizens, NGOs, and Government authorities.</li>
+        <li><b>Gemini AI Triage:</b> Automated incident classification &amp; priority allocation via <code>@google/generative-ai</code>.</li>
+        <li><b>SOS &amp; Shelter Finder:</b> Coordinates disaster victims to functional emergency relief shelters.</li>
+        <li><b>Multi-Role Security:</b> Strict Jose JWT token authorization for Citizens, Volunteers, NGOs, and Government authorities.</li>
+        <li><b>Automated Test Suite:</b> Tested fail-closed security and RBAC policies (<code>tests/security/auth-rbac.test.ts</code>).</li>
       </ul>
       <p>
-        <b>Tech:</b> Next.js 16, TypeScript, TailwindCSS, Express.js, MongoDB, Socket.IO, Google Maps API, JWT.
+        <b>Tech:</b> Next.js 16.4, TypeScript, Google Gemini SDK, MongoDB (Mongoose), Jose (JWT), Zod, TailwindCSS v4.
       </p>
       <p align="center">
         <a href="https://github.com/Wasif109160/ReliefAI">
@@ -147,19 +147,19 @@ I am a **Software Engineering Student at American International University-Bangl
     <td width="50%" valign="top">
       <h3 align="center">🛒 BazarDor</h3>
       <p align="center">
-        <b>Intelligent Commodity Price Tracker &amp; Market Analytics Engine</b>
+        <b>Market Commodity Price Tracker &amp; Regional Intelligence Platform</b>
       </p>
       <p>
-        A high-performance market surveillance platform tracking essential commodity fluctuations across regional supply chains. Designed with optimized server-side caching and dynamic client-side filtering.
+        A high-performance market surveillance platform tracking essential commodity fluctuations across regional supply chains with embedded SQLite storage and session authentication.
       </p>
       <ul>
-        <li><b>Real-Time Indexing:</b> Instant search and category-based price analytics.</li>
-        <li><b>Historical Trends:</b> Visual data modeling for supply-chain transparency.</li>
-        <li><b>Responsive UI:</b> Highly accessible, mobile-first design system with zero layout shift.</li>
-        <li><b>Server-Side Caching:</b> Ultra-fast sub-millisecond route generation.</li>
+        <li><b>Fast Indexing:</b> Instant search and category-based commodity pricing analytics.</li>
+        <li><b>Embedded Database:</b> Low-latency local queries backed by <code>better-sqlite3</code> and Next.js Server Components.</li>
+        <li><b>Session Security:</b> Modern user authentication powered by <code>better-auth</code>.</li>
+        <li><b>Responsive UI:</b> Accessible, mobile-first design system with zero layout shift.</li>
       </ul>
       <p>
-        <b>Tech:</b> Next.js 16, React, TypeScript, TailwindCSS, REST API, Node.js.
+        <b>Tech:</b> Next.js 16.4, TypeScript, Better-Auth, Better-SQLite3, TailwindCSS v4, React Hot Toast.
       </p>
       <p align="center">
         <a href="https://github.com/Wasif109160/B14-A7-Bazar-Dor-main">
@@ -172,18 +172,18 @@ I am a **Software Engineering Student at American International University-Bangl
     <td width="50%" valign="top">
       <h3 align="center">💪 FitLog</h3>
       <p align="center">
-        <b>Data-Driven Fitness &amp; Biometric Progression Platform</b>
+        <b>Local-First Workout Volume &amp; Exercise Progression Tracker</b>
       </p>
       <p>
-        A modern web application tailored for performance tracking, workout volume planning, and habit consistency analytics with interactive visual feedback loops.
+        A client-side workout tracking application designed for logging sets, tracking exercise volume, and monitoring consistency with instant browser persistence.
       </p>
       <ul>
-        <li><b>Workout Architecture:</b> Dynamic exercise builder with sets, tempo, and RPE tracking.</li>
-        <li><b>Analytics Engine:</b> Progressive overload calculation and graphical volume charting.</li>
-        <li><b>Interactive UI:</b> Toast notifications, responsive modals, and fluid transitions.</li>
+        <li><b>Exercise Builder:</b> Dynamic exercise logger with sets, tempo, weight, and reps inputs.</li>
+        <li><b>Local-First Persistence:</b> Zero-latency interaction using browser LocalStorage state caching.</li>
+        <li><b>Modern React 19:</b> Leverages React Compiler optimizations and toast notification feedback.</li>
       </ul>
       <p>
-        <b>Tech:</b> Next.js, React, Tailwind CSS, JavaScript, React Icons, LocalStorage/REST.
+        <b>Tech:</b> Next.js 16.3, React 19, React Compiler, TailwindCSS v4, LocalStorage, React-Toastify.
       </p>
       <p align="center">
         <a href="https://github.com/Wasif109160/Fitlog">
@@ -194,18 +194,18 @@ I am a **Software Engineering Student at American International University-Bangl
     <td width="50%" valign="top">
       <h3 align="center">⚡ DevStack</h3>
       <p align="center">
-        <b>Interactive Developer Toolchain Architect &amp; Stack Visualizer</b>
+        <b>Interactive Developer Ecosystem &amp; Software Toolchain Explorer</b>
       </p>
       <p>
-        A dynamic developer ecosystem explorer enabling software engineers and teams to evaluate, contrast, and simulate full-stack software architectures.
+        A developer toolchain visualizer enabling software engineers to evaluate and contrast modern frontend, backend, and database stacks with prototype UI wireframes.
       </p>
       <ul>
-        <li><b>Modular Stack Configurator:</b> Real-time compatibility checking across frameworks.</li>
-        <li><b>Category Matrix:</b> In-depth breakdown of Frontend, Backend, Database, and Cloud layers.</li>
-        <li><b>Instant Deploy Previews:</b> Pre-configured scaffolding guidelines for modern stacks.</li>
+        <li><b>Toolchain Matrix:</b> Explores compatibility between React, UI libraries, and backend tools.</li>
+        <li><b>Design Wireframes:</b> Includes full UI design token systems built in Figma and Penpot.</li>
+        <li><b>Vite Powered:</b> Fast client-side Hot Module Replacement and modular components.</li>
       </ul>
       <p>
-        <b>Tech:</b> React 19, TypeScript, Vite, TailwindCSS, Responsive Design Patterns.
+        <b>Tech:</b> React, Vite, TailwindCSS v4, DaisyUI v5, Penpot &amp; Figma, React-Toastify.
       </p>
       <p align="center">
         <a href="https://github.com/Wasif109160/PH-14-AS-5">

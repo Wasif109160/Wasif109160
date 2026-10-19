@@ -27,36 +27,36 @@
 Every single public repository on your account was examined. Here is the unvarnished engineering verdict:
 
 ### 1. `ReliefAI` (Flagship)
-- **Tech Stack:** TypeScript, Next.js 16.4, TailwindCSS, Express.js, MongoDB, Socket.IO
+- **Tech Stack:** TypeScript, Next.js 16.4, Google Gemini AI (`@google/generative-ai`), MongoDB (Mongoose), Jose (JWT), Zod, TailwindCSS v4
 - **Size:** 2,576 KB | **README:** 21,176 characters (Excellent)
-- **Strengths:** Excellent architectural depth, multi-role access control (NGO, Government, Public), tests directory, documentation, and remediation reports.
+- **Strengths:** Excellent architectural depth, automated security test suites (`tests/security/auth-rbac.test.ts`), multi-role access control (NGO, Government, Volunteer, Public), documentation, and remediation reports.
 - **Critical Weaknesses:**
   - The default branch is currently set to `fix/reliefai-production-readiness` instead of `main`! Recruiters viewing the repo see an unstable fix branch as default.
   - Repository has **no description** and **no GitHub topics** set in the sidebar.
-- **Action Plan:** Merge `fix/reliefai-production-readiness` into `main`, switch default branch back to `main`, set description: *"Multi-Agency AI Disaster Response & Crisis Coordination Platform built with Next.js 16, TypeScript, Socket.IO, and MongoDB."*, add topics: `disaster-response`, `ai-triage`, `nextjs16`, `socket-io`, `crisis-management`.
+- **Action Plan:** Merge `fix/reliefai-production-readiness` into `main`, switch default branch back to `main`, set description: *"Multi-Agency AI Disaster Response Platform built with Next.js 16, TypeScript, Google Gemini SDK, Jose JWT, and MongoDB."*, add topics: `disaster-response`, `gemini-ai`, `nextjs16`, `jwt-rbac`, `crisis-management`.
 
 ### 2. `B14-A7-Bazar-Dor-main`
-- **Tech Stack:** TypeScript, Next.js 16.4, TailwindCSS, React
+- **Tech Stack:** TypeScript, Next.js 16.4, Better-Auth, Better-SQLite3, TailwindCSS v4, React Hot Toast
 - **Size:** 132 KB | **README:** 8,672 characters (Very Good)
-- **Strengths:** Clean code, bilingual documentation (English/Bengali), dynamic market price comparison, Next.js 16 app router.
+- **Strengths:** Clean code, bilingual documentation (English/Bengali), dynamic market price comparison, Next.js 16 Server Components querying embedded SQLite database (`auth.db`).
 - **Critical Weaknesses:**
   - Catastrophic repository name: `B14-A7-Bazar-Dor-main` screams "I downloaded a zip file of Batch 14 Assignment 7 and uploaded it without renaming."
   - No description or topics on GitHub.
-- **Action Plan:** Rename repository to **`BazarDor`** immediately. Set description: *"Real-Time Commodity Intelligence & Market Price Tracker with Server-Side Caching and Dynamic Filtering."*
+- **Action Plan:** Rename repository to **`BazarDor`** immediately. Set description: *"Market Commodity Price Tracker & Regional Intelligence Platform with Embedded SQLite and Better-Auth."*
 
 ### 3. `Fitlog`
-- **Tech Stack:** JavaScript, Next.js, React, Tailwind CSS
+- **Tech Stack:** Next.js 16.3, React 19, Babel React Compiler, TailwindCSS v4, LocalStorage, React-Toastify
 - **Size:** 187 KB | **README:** 276 characters (Barebones)
-- **Strengths:** Functional workout planner with assets, modular React components.
+- **Strengths:** Functional workout planner with assets, modular React 19 components with React Compiler.
 - **Critical Weaknesses:**
   - The README is only 3 bullet points. No architecture diagram, no live demo link, no setup guide.
   - No repository description.
 - **Action Plan:** Expand README to include feature walkthroughs, UI preview screenshots, installation steps, and roadmap.
 
 ### 4. `PH-14-AS-5` (DevStack)
-- **Tech Stack:** TypeScript, React 19, Vite, TailwindCSS
+- **Tech Stack:** React, Vite, TailwindCSS v4, DaisyUI v5, Penpot & Figma UI files
 - **Size:** 830 KB | **README:** 4,219 characters
-- **Strengths:** Built an interactive tech stack builder tool with dynamic previews.
+- **Strengths:** Built an interactive tech stack builder tool with dynamic previews and complete design systems in Penpot and Figma.
 - **Critical Weaknesses:**
   - Named `PH-14-AS-5` (Programming Hero Assignment 5). Recruiters discount this as grade-school homework rather than real engineering.
 - **Action Plan:** Rename to **`DevStack`** or **`StackForge`**. Description: *"Interactive Full-Stack Architecture Builder & Ecosystem Visualizer for Software Engineers."*
