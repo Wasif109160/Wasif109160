@@ -164,11 +164,15 @@
           <div class="profile-card">
             <div class="profile-avatar-wrap">
               <img 
-                src="./images/profile.jpeg" 
+                src="/images/profile.jpeg" 
                 alt="Portrait of T.M. Wasif Jamee" 
                 class="profile-avatar-img"
                 id="profile-img"
                 loading="eager"
+                decoding="async"
+                fetchpriority="high"
+                width="420"
+                height="420"
               >
               <div class="profile-status-overlay">
                 <span class="pulse-dot"></span>
@@ -422,7 +426,9 @@
         </div>
 
         <div class="education-card" style="margin-bottom: 2rem;">
-          <div class="edu-icon-badge">📄</div>
+          <div class="edu-icon-badge" style="padding: 0; overflow: hidden; width: 56px; height: 56px; border-radius: 50%; border: 2px solid rgba(56, 189, 248, 0.4); box-shadow: 0 0 15px rgba(56, 189, 248, 0.25); flex-shrink: 0;">
+            <img src="/images/profile.jpeg" alt="T.M. Wasif Jamee" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block;" loading="lazy" width="56" height="56">
+          </div>
           <div class="edu-details" style="width: 100%;">
             <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.75rem;">
               <div>
