@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T.M. Wasif Jamee — AI Engineer & Full-Stack Systems Architect</title>
+  <meta name="description" content="Portfolio of T.M. Wasif Jamee: AI Engineer, MERN Stack Developer, and Computer Science & Engineering Student at AIUB. Specializing in real-time crisis platforms, distributed systems, and modern web architectures.">
+  <meta name="keywords" content="T.M. Wasif Jamee, Wasif109160, AI Engineer, MERN Stack, Full Stack Developer, ReliefAI, Next.js, AIUB, Software Engineer, Portfolio">
+  <meta name="author" content="T.M. Wasif Jamee">
+  <meta name="theme-color" content="#070B14">
+
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:title" content="T.M. Wasif Jamee — AI Engineer & Full-Stack Architect">
+  <meta property="og:description" content="Engineering resilient distributed systems, real-time crisis coordination engines, and high-performance full-stack web applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/Wasif109160">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+  <!-- Ambient Light Effect & Grid Background -->
+  <div class="bg-ambient-layer" aria-hidden="true">
+    <div class="ambient-blob-1"></div>
+    <div class="ambient-blob-2"></div>
+    <div class="bg-grid-pattern"></div>
+  </div>
+
+  <!-- Site Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" id="brand-logo" aria-label="Wasif Jamee Home">
+        <span class="brand-icon">W</span>
+        <span>Wasif Jamee</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+          <li><a href="#systems" class="nav-link" id="nav-systems">Systems</a></li>
+          <li><a href="#architecture" class="nav-link" id="nav-architecture">Architecture</a></li>
+          <li><a href="#skills" class="nav-link" id="nav-skills">Tech Stack</a></li>
+          <li><a href="#console" class="nav-link" id="nav-console">Console</a></li>
+          <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm" id="btn-hire-me">Hire Wasif</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <a href="#about" class="nav-link mobile-nav-link">About</a>
+      <a href="#systems" class="nav-link mobile-nav-link">Systems</a>
+      <a href="#architecture" class="nav-link mobile-nav-link">Architecture</a>
+      <a href="#skills" class="nav-link mobile-nav-link">Tech Stack</a>
+      <a href="#console" class="nav-link mobile-nav-link">Console</a>
+      <a href="#education" class="nav-link mobile-nav-link">Education</a>
+      <a href="#contact" class="nav-link mobile-nav-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span class="badge badge-live">
+              <span class="pulse-dot"></span>
+              Open to SWE & AI Internships 2026/2027
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting <span class="text-gradient">Real-Time AI</span> &amp; Resilient Systems
+          </h1>
+
+          <!-- Dynamic Typewriter -->
+          <div class="hero-typewriter-wrap" aria-live="polite">
+            <span class="pill-prompt">&gt;</span>
+            <span id="typewriter-text"></span>
+            <span class="typewriter-cursor"></span>
+          </div>
+
+          <p class="hero-bio">
+            Hi, I'm <strong>T.M. Wasif Jamee</strong> — a Computer Science &amp; Engineering undergraduate at <strong>AIUB</strong> and a Full-Stack AI Engineer. I design mission-critical platforms like <strong>ReliefAI</strong>, high-concurrency microservices, and reactive web applications engineered for speed, scalability, and impact.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#systems" class="btn btn-primary" id="btn-explore-systems">
+              <span>Explore Featured Systems</span>
+              <span>↓</span>
+            </a>
+            <a href="#console" class="btn btn-secondary" id="btn-launch-terminal">
+              <span>Interactive Console</span>
+              <span>&gt;_</span>
+            </a>
+            <a href="https://github.com/Wasif109160" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-github-link">
+              <span>GitHub (@Wasif109160)</span>
+              <span>↗</span>
+            </a>
+          </div>
+
+          <div class="hero-terminal-pill">
+            <span class="pill-prompt">$</span>
+            <span>whoami --engineering-focus</span>
+            <span style="color: var(--accent-cyan);">→ Full-Stack AI • Distributed Systems • Algorithmic Optimization</span>
+          </div>
+        </div>
+
+        <!-- Right Profile Showcase Card (Natural Integration of Wasif's Profile Photo) -->
+        <div class="profile-card-wrap" id="about">
+          <div class="avatar-ambient-glow"></div>
+          <div class="profile-card">
+            <div class="profile-avatar-wrap">
+              <img 
+                src="./images/profile.jpeg" 
+                alt="Portrait of T.M. Wasif Jamee" 
+                class="profile-avatar-img"
+                id="profile-img"
+                loading="eager"
+              >
+              <div class="profile-status-overlay">
+                <span class="pulse-dot"></span>
+                <span>Available for Global Relocation & Remote</span>
+              </div>
+            </div>
+
+            <div class="profile-meta-row">
+              <div>
+                <h2 class="profile-meta-name">T.M. Wasif Jamee</h2>
+                <div class="profile-meta-title">AI Engineer & MERN Stack Developer</div>
+              </div>
+              <span class="badge">AIUB CSE</span>
+            </div>
+
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+              Passionate about real-time telemetry, low-latency APIs, and clean software architecture.
+            </p>
+
+            <div class="profile-stats-grid">
+              <div class="profile-stat-box">
+                <div class="stat-box-val" id="profile-stat-repos">16+</div>
+                <div class="stat-box-lbl">Public Repositories</div>
+              </div>
+              <div class="profile-stat-box">
+                <div class="stat-box-val">Dhaka</div>
+                <div class="stat-box-lbl">Location (Ready to Relocate)</div>
+              </div>
+              <div class="profile-stat-box">
+                <div class="stat-box-val">Next.js 16</div>
+                <div class="stat-box-lbl">Primary Web Stack</div>
+              </div>
+              <div class="profile-stat-box">
+                <div class="stat-box-val">C++ / Python</div>
+                <div class="stat-box-lbl">Algorithmic Core</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Metrics Strip -->
+    <section class="metrics-section" aria-label="Key Engineering Metrics">
+      <div class="container">
+        <div class="metrics-grid" id="metrics-grid">
+          <!-- Dynamically populated via JavaScript for animated counters -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Engineering Systems Section -->
+    <section class="section" id="systems">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span>// PRODUCTION &amp; RESEARCH ARCHITECTURES</span>
+          </div>
+          <h2 class="section-title">Featured Engineering Systems</h2>
+          <p class="section-subtitle">
+            Engineered with strict types, deterministic state management, and production-tested API contracts. Click "Inspect Architecture" for system design breakdowns.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs" id="project-filter-tabs">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All Systems</button>
+          <button class="filter-btn" data-filter="ai" id="filter-ai">AI &amp; Crisis Platforms</button>
+          <button class="filter-btn" data-filter="web" id="filter-web">Web &amp; Distributed Systems</button>
+          <button class="filter-btn" data-filter="graphics" id="filter-graphics">Graphics &amp; Systems</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamically injected via data.js and main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Architecture Deep-Dive Section -->
+    <section class="section" id="architecture" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span>// SYSTEM DESIGN CASE STUDY</span>
+          </div>
+          <h2 class="section-title">ReliefAI Real-Time Dispatch Pipeline</h2>
+          <p class="section-subtitle">
+            Interactive multi-agency crisis coordination dataflow illustrating low-latency incident triage from citizen SOS to field deployment.
+          </p>
+        </div>
+
+        <div class="architecture-box">
+          <div class="arch-flow-diagram" id="arch-flow-diagram">
+            <div class="arch-node active" data-node="sos">
+              <div class="arch-node-icon">📱</div>
+              <div class="arch-node-title">Citizen SOS</div>
+              <div class="arch-node-sub">&lt;50ms Ingestion</div>
+            </div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node" data-node="ai">
+              <div class="arch-node-icon">🧠</div>
+              <div class="arch-node-title">AI Triage Engine</div>
+              <div class="arch-node-sub">Severity Matrix</div>
+            </div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node" data-node="geo">
+              <div class="arch-node-icon">🗺️</div>
+              <div class="arch-node-title">Geospatial Router</div>
+              <div class="arch-node-sub">Proximity Matching</div>
+            </div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node" data-node="dispatch">
+              <div class="arch-node-icon">📡</div>
+              <div class="arch-node-title">Socket.IO Broadcast</div>
+              <div class="arch-node-sub">Real-Time Dispatch</div>
+            </div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node" data-node="command">
+              <div class="arch-node-icon">🛡️</div>
+              <div class="arch-node-title">Command Center</div>
+              <div class="arch-node-sub">NGO &amp; Gov RBAC</div>
+            </div>
+          </div>
+
+          <div class="arch-detail-panel" id="arch-detail-panel">
+            <h3 style="color: var(--accent-cyan); font-size: 1.1rem; margin-bottom: 0.5rem;" id="arch-detail-title">
+              Citizen SOS Ingestion Layer
+            </h3>
+            <p id="arch-detail-desc">
+              Lightweight Next.js edge route handlers capture geo-tagged distress signals, sanitize telemetry payloads, and perform instantaneous cryptographic rate limiting to mitigate denial-of-service spam during crisis situations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Stack & Tooling Matrix -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span>// TECHNICAL PROFICIENCY MATRIX</span>
+          </div>
+          <h2 class="section-title">Tooling &amp; Engineering Stack</h2>
+          <p class="section-subtitle">
+            Pragmatic mastery spanning algorithmic problem solving in C++, modern full-stack web engineering in Next.js &amp; TypeScript, and distributed database modeling.
+          </p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Dynamically populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Recruiter & Developer Interactive Console -->
+    <section class="section" id="console">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span>// INTERACTIVE DEVELOPER CONSOLE</span>
+          </div>
+          <h2 class="section-title">Query Wasif's Profile CLI</h2>
+          <p class="section-subtitle">
+            Recruiters and engineers: click quick-run chips or type commands into the terminal below to audit skills, projects, and credentials directly.
+          </p>
+        </div>
+
+        <div class="terminal-window" id="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <span class="terminal-title">wasif@engineering-terminal: ~ (zsh)</span>
+            <span style="font-size: 0.75rem; color: #64748B;">Press Enter to Execute</span>
+          </div>
+
+          <div class="terminal-body" id="terminal-body">
+            <div class="terminal-log-line">Welcome to T.M. Wasif Jamee's Engineering Console [Version 2.4.0].</div>
+            <div class="terminal-log-line">Type <span style="color: #38BDF8;">'help'</span> to see available commands or click the chips below.</div>
+            <div class="terminal-log-line" style="color: #10B981;">STATUS: System online. Ready for candidate inspection.</div>
+          </div>
+
+          <!-- Quick Run Chips -->
+          <div class="terminal-chips-row">
+            <button class="terminal-chip" data-cmd="whoami">whoami</button>
+            <button class="terminal-chip" data-cmd="projects">projects</button>
+            <button class="terminal-chip" data-cmd="skills">skills</button>
+            <button class="terminal-chip" data-cmd="education">education</button>
+            <button class="terminal-chip" data-cmd="status">status</button>
+            <button class="terminal-chip" data-cmd="contact">contact</button>
+            <button class="terminal-chip" data-cmd="clear">clear</button>
+          </div>
+
+          <!-- Command Input Line -->
+          <form class="terminal-input-row" id="terminal-form">
+            <span class="terminal-prompt-prefix">wasif@terminal:~$</span>
+            <input 
+              type="text" 
+              class="terminal-input" 
+              id="terminal-input" 
+              placeholder="Type command (e.g. 'projects', 'whoami', 'help')..." 
+              autocomplete="off" 
+              spellcheck="false"
+            >
+            <button type="submit" class="btn btn-primary btn-sm" style="padding: 0.35rem 0.85rem;">Run</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Foundation Section -->
+    <section class="section" id="education" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span>// ACADEMIC RIGOR &amp; COMPUTER SCIENCE</span>
+          </div>
+          <h2 class="section-title">University Education &amp; Fundamentals</h2>
+          <p class="section-subtitle">
+            Solid foundations in computer systems, algorithm analysis, discrete math, and modern software engineering methodologies.
+          </p>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-icon-badge">🎓</div>
+          <div class="edu-details">
+            <h3 class="edu-institution">American International University-Bangladesh (AIUB)</h3>
+            <div class="edu-degree">Bachelor of Science in Computer Science &amp; Engineering (CSE)</div>
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+              Dhaka, Bangladesh • Undergraduate Degree (In Progress)
+            </p>
+            <ul class="edu-highlights-list">
+              <li class="edu-highlight-item">
+                <span style="color: var(--accent-emerald);">✔</span>
+                <span><strong>Core Rigor:</strong> Data Structures &amp; Algorithms, Object-Oriented Analysis &amp; Design (OOAD), Operating Systems, and Database Management Systems.</span>
+              </li>
+              <li class="edu-highlight-item">
+                <span style="color: var(--accent-emerald);">✔</span>
+                <span><strong>Specialized Lab Work:</strong> Distributed Web Architectures, Microservices, Real-Time Networking, and OpenGL Computer Graphics.</span>
+              </li>
+              <li class="edu-highlight-item">
+                <span style="color: var(--accent-emerald);">✔</span>
+                <span><strong>Engineering Team Projects:</strong> Lead architect across multi-tier term projects including enterprise ERP systems and crisis relief platforms.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recruiter Connect & Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <span>// RECRUITER &amp; COLLABORATION INQUIRIES</span>
+          </div>
+          <h2 class="section-title">Let's Connect &amp; Build</h2>
+          <p class="section-subtitle">
+            I am actively interviewing for Software Engineering and AI internships (Summer/Fall 2026/2027) as well as remote junior SDE positions globally.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Channels -->
+          <div class="contact-card">
+            <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">Direct Channels</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted);">
+              Feel free to reach out directly via email or connect with me on LinkedIn for interviews, mentorship, or open-source collaboration.
+            </p>
+
+            <div class="contact-channels">
+              <div class="contact-channel-item">
+                <div class="channel-info">
+                  <div class="channel-icon">✉️</div>
+                  <div>
+                    <div class="channel-label">Email Address</div>
+                    <div class="channel-val">wasifjamee05@gmail.com</div>
+                  </div>
+                </div>
+                <button class="btn btn-secondary btn-sm" id="btn-copy-email" title="Copy email address">
+                  Copy
+                </button>
+              </div>
+
+              <a href="https://www.linkedin.com/in/t-m-wasif-jamee-687094297/" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+                <div class="channel-info">
+                  <div class="channel-icon">🔗</div>
+                  <div>
+                    <div class="channel-label">LinkedIn Profile</div>
+                    <div class="channel-val">/in/t-m-wasif-jamee-687094297</div>
+                  </div>
+                </div>
+                <span class="btn btn-secondary btn-sm">Connect ↗</span>
+              </a>
+
+              <a href="https://github.com/Wasif109160" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+                <div class="channel-info">
+                  <div class="channel-icon">🐙</div>
+                  <div>
+                    <div class="channel-label">GitHub Repositories</div>
+                    <div class="channel-val">@Wasif109160 (16+ Repos)</div>
+                  </div>
+                </div>
+                <span class="btn btn-secondary btn-sm">Follow ↗</span>
+              </a>
+
+              <div class="contact-channel-item">
+                <div class="channel-info">
+                  <div class="channel-icon">📍</div>
+                  <div>
+                    <div class="channel-label">Location &amp; Availability</div>
+                    <div class="channel-val">Dhaka, Bangladesh • Relocation Ready</div>
+                  </div>
+                </div>
+                <span class="badge badge-live">Immediate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Message Dispatch -->
+          <div class="contact-card">
+            <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">Send a Message</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+              Dispatch an interview inquiry or message directly to Wasif.
+            </p>
+
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name or Company</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Jane Doe / Tech Recruiter" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. jane@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject / Role Opportunity</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Software Engineering Internship 2026" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message Details</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Tell me about the role, team, or challenge you're solving..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btn-submit-contact">
+                <span>Send Message to Wasif</span>
+                <span>✉️</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.25rem;">
+            T.M. Wasif Jamee
+          </div>
+          <div class="footer-copy">
+            AI Engineer • MERN Stack Developer • AIUB Undergraduate
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <span class="badge badge-live">
+            <span class="pulse-dot"></span>
+            All 16 Repositories Synchronized
+          </span>
+          <button class="back-to-top-btn" id="btn-back-to-top" aria-label="Back to top" title="Back to top">
+            ↑
+          </button>
+        </div>
+      </div>
+
+      <div style="text-align: center; font-size: 0.8rem; color: var(--text-dim); border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
+        © <span id="current-year">2026</span> T.M. Wasif Jamee. Built with performance, accessibility, and clean architecture.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Feedback -->
+  <div class="toast-notice" id="toast-notice" role="status" aria-live="polite">
+    <span id="toast-icon">✓</span>
+    <span id="toast-msg">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Architecture Inspection Modal -->
+  <div class="modal-backdrop" id="arch-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">✕</button>
+      <div id="modal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Entrypoint -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
